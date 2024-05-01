@@ -199,6 +199,13 @@ color: #0b5e86 !important;
 /* .teal {
 background-color: #00695c !important;
 } */
+
+
+/*MOP*/
+.mop { text-transform: none !important; border-bottom: none !important; }
+
+/*Project's Image's CSS*/
+.project-image:hover { opacity: 0.5; }
 @media (min-width:1200px) {
 #experience .container { width: 860px; }
 }
@@ -236,8 +243,4 @@ i.mdi-navigation-close.right { position: relative; bottom: 15px; }
 #intro.section { background-position-x: 30%; }
 }
 
-/*MOP*/
-.mop { text-transform: none !important; border-bottom: none !important; }
 
-/*Project's Image's CSS*/
-.project-image:hover { opacity: 0.5; }
