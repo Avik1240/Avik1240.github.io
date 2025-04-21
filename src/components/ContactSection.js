@@ -67,9 +67,10 @@ export default function ContactSection() {
             </label>
           <input type="text" placeholder="Message" required />
           </div>
-          <button type="submit">Send Message</button>
+          <button type="submit" title="Send">Send Message</button>
         </form>
       </motion.div>
     </section>
   );
 }
+  
