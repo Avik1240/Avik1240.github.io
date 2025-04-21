@@ -38,7 +38,6 @@ export default function ExperienceSection() {
         <div className={styles.timeline}>
           {experiences.map((exp, index) => (
             <div key={index} className={styles.item}>
-              <div className={styles.marker} />
               <div className={styles.details}>
                 <h3 className={styles.role}>{exp.role}</h3>
                 <p className={styles.company}>{exp.company} — <span>{exp.duration}</span></p>

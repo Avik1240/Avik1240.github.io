@@ -1,5 +1,6 @@
-.sidebar { position: fixed; width: 220px; height: 100vh; background-color: #0f0f0f; color: #e0e0e0; padding-top: 50px; border-right: 1px solid #2a2a2a; }
-.sidebar ul { list-style: none; padding: 0 20px; }
-.sidebar li { margin: 20px 0; }
-.sidebar a { color: #e0e0e0; text-decoration: none; font-weight: 500; transition: color 0.2s ease; }
-.sidebar a:hover { color: #00bfff; /* electric blue highlight */ }
+.sidebar { position: fixed; max-width: 250px; min-height: 100vh; background-color: #0a0a0a; color: #cfcfcf; padding-top: 20px; width: 100%; }
+.sidebar ul { list-style: none; padding: 0 10px; margin: 0; }
+.sidebar a { color: #cfcfcf; font-weight: 500; text-decoration: none; transition: all .2s ease; font-size: 18px; display: flex; align-items: center; cursor: pointer; padding: 10px 20px; border-radius: 10px; margin-bottom: .5rem;}
+.sidebar a svg { margin-right: .5rem; }
+.sidebar a:hover { background-color: #222; }
+.active { background-color: #222; }

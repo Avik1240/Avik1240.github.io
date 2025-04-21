@@ -1,10 +1,10 @@
-'use client'; // ✅ IMPORTANT FOR FRAMER MOTION IN APP DIR
+"use client"; // ✅ IMPORTANT FOR FRAMER MOTION IN APP DIR
 
-import { motion } from 'framer-motion';
-import styles from './HomeSection.module.css';
+import { motion } from "framer-motion";
+import styles from "./HomeSection.module.css";
 
 export default function HomeSection() {
-  console.log('motion:', motion); // Check if this is undefined
+  console.log("motion:", motion); // Check if this is undefined
 
   return (
     <section id="home" className={styles.home}>
@@ -14,7 +14,9 @@ export default function HomeSection() {
         transition={{ duration: 0.6 }}
         className={styles.content}
       >
-        <h1>Hello, I’m <span className={styles.name}>Your Name</span></h1>
+        <h1>
+          Hello, I’m <span className={styles.name}>Avik Jain</span>
+        </h1>
         <p>A passionate Full Stack Developer based in [Your City]</p>
       </motion.div>
     </section>

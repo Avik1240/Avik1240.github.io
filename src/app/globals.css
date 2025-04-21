@@ -1,2 +1,13 @@
-html, body { margin: 0; padding: 0; background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; }
+html, body { margin: 0; padding: 0; background-color: #121212; color: #cfcfcf; font-family: "Poppins"; }
 * { box-sizing: border-box; }
+a, button { text-decoration: none; color: inherit; transition: all .2s ease; }
+a:focus, button:focus, a:focus-visible, button:focus-visible, a:focus-within, button:focus-within { outline: none; box-shadow: none; }
+h2 { margin-top: 0; }
+::-moz-selection { color: #000; background: #379a61; text-shadow: none; }
+::selection { color: #000; background: #379a61; text-shadow: none; }
+button { font-family: "Poppins"; }
+a:hover, button:hover { cursor: pointer; }
+input{font-size: 16px;}
+input{ width: 100%; padding: 12px; margin: 8px 0 16px 0; border-radius: 6px; border: 1px solid transparent; background-color: #0a0a0a; color: #cfcfcf;}
+input:-webkit-autofill { box-shadow: 0 0 0px 1000px #0a0a0a inset !important; transition: background-color 9999s ease-in-out 0s; color: #cfcfcf !important;  -webkit-text-fill-color: #cfcfcf !important;}
+input:focus-visible, input:focus-within, input:focus { outline: none; box-shadow: none; }

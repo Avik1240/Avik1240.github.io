@@ -26,6 +26,27 @@ const projects = [
     github: 'https://github.com/your-username/wa-link-generator',
     demo: '',
   },
+  {
+    name: 'Irregular Snaps',
+    description: 'Blog based website depicting the life of a photographer.',
+    tech: ['HTML', 'CSS', 'JS', 'Bootstrap'],
+    github: 'https://github.com/your-username/wa-link-generator',
+    demo: '',
+  },
+  {
+    name: 'WhatsApp Link Generator',
+    description: 'Clone of create.wa.link – allows generating WhatsApp contact links with custom messages.',
+    tech: ['Next.js', 'MongoDB', 'API Routes'],
+    github: 'https://github.com/your-username/wa-link-generator',
+    demo: '',
+  },
+  {
+    name: 'WhatsApp Link Generator',
+    description: 'Clone of create.wa.link – allows generating WhatsApp contact links with custom messages.',
+    tech: ['Next.js', 'MongoDB', 'API Routes'],
+    github: 'https://github.com/your-username/wa-link-generator',
+    demo: '',
+  },
 ];
 
 export default function ProjectsSection() {
@@ -51,12 +72,12 @@ export default function ProjectsSection() {
               </div>
               <div className={styles.links}>
                 {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" title='GitHub Repository'>
                     <FaGithub /> GitHub
                   </a>
                 )}
                 {project.demo && (
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" title='Live Demo'>
                     <FaExternalLinkAlt /> Live
                   </a>
                 )}

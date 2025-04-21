@@ -1,39 +1,39 @@
-'use client';
+"use client";
 
-import styles from './SkillsSection.module.css';
-import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub } from 'react-icons/fa';
-import { SiNextdotjs, SiMongodb, SiExpress } from 'react-icons/si';
+import styles from "./SkillsSection.module.css";
+import { motion } from "framer-motion";
+import {
+    FaReact,
+    FaNodeJs,
+    FaHtml5,
+    FaCss3Alt,
+    FaJsSquare,
+    FaGitAlt,
+    FaGithub,
+  } from 'react-icons/fa';
+  import {
+    SiNextdotjs,
+    SiMongodb,
+    SiExpress,
+    SiPostman,
+  } from 'react-icons/si';
+  
 
-const skillCategories = [
-  {
-    title: 'Frontend',
-    skills: [
-      { name: 'HTML', icon: <FaHtml5 /> },
-      { name: 'CSS', icon: <FaCss3Alt /> },
-      { name: 'JavaScript', icon: <FaJs /> },
-      { name: 'React', icon: <FaReact /> },
-      { name: 'Next.js', icon: <SiNextdotjs /> },
-    ],
-  },
-  {
-    title: 'Backend',
-    skills: [
-      { name: 'Node.js', icon: <FaNodeJs /> },
-      { name: 'Express.js', icon: <SiExpress /> },
-      { name: 'MongoDB', icon: <SiMongodb /> },
-    ],
-  },
-  {
-    title: 'Tools',
-    skills: [
-      { name: 'Git', icon: <FaGitAlt /> },
-      { name: 'GitHub', icon: <FaGithub /> },
-    ],
-  },
+const techStack = [
+  { name: "React", icon: <FaReact /> },
+  { name: "Next.js", icon: <SiNextdotjs /> },
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "Express.js", icon: <SiExpress /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "JavaScript", icon: <FaJsSquare /> },
+  { name: "HTML5", icon: <FaHtml5 /> },
+  { name: "CSS3", icon: <FaCss3Alt /> },
+  { name: "Git", icon: <FaGitAlt /> },
+  { name: "GitHub", icon: <FaGithub /> },
+  { name: "Postman", icon: <SiPostman /> },
 ];
 
-export default function SkillsSection() {
+export default function TechStackSection() {
   return (
     <section id="skills" className={styles.skills}>
       <motion.div
@@ -45,17 +45,10 @@ export default function SkillsSection() {
       >
         <h2 className={styles.heading}>Skills</h2>
         <div className={styles.grid}>
-          {skillCategories.map((category, index) => (
-            <div key={index} className={styles.category}>
-              <h3 className={styles.categoryTitle}>{category.title}</h3>
-              <ul className={styles.skillList}>
-                {category.skills.map((skill, i) => (
-                  <li key={i} className={styles.skillItem}>
-                    <span className={styles.icon}>{skill.icon}</span>
-                    <span>{skill.name}</span>
-                  </li>
-                ))}
-              </ul>
+          {techStack.map((tech, i) => (
+            <div key={i} className={styles.card}>
+              <span className={styles.icon}>{tech.icon}</span>
+              <p className={styles.skillName}>{tech.name}</p>
             </div>
           ))}
         </div>

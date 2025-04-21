@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import styles from './AboutSection.module.css';
-import { motion } from 'framer-motion';
+import styles from "./AboutSection.module.css";
+import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
@@ -15,7 +15,10 @@ export default function AboutSection() {
       >
         <h2 className={styles.heading}>About Me</h2>
         <p className={styles.text}>
-          I’m a full-stack developer with over 10 years of experience working with Node.js, Next.js, and MongoDB. I love building modern, performant, and elegant web applications with a focus on clean UX and scalable backend.
+          I’m a full-stack developer with over 10 years of experience working
+          with Node.js, Next.js, and MongoDB. I love building modern,
+          performant, and elegant web applications with a focus on clean UX and
+          scalable backend.
         </p>
       </motion.div>
     </section>
