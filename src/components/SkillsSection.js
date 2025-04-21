@@ -48,7 +48,7 @@ export default function TechStackSection() {
           {techStack.map((tech, i) => (
             <div key={i} className={styles.card}>
               <span className={styles.icon}>{tech.icon}</span>
-              <p className={styles.skillName}>{tech.name}</p>
+              {tech.name}
             </div>
           ))}
         </div>

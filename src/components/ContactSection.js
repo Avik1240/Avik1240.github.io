@@ -3,6 +3,7 @@
 import styles from "./ContactSection.module.css";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function ContactSection() {
   return (
@@ -21,56 +22,58 @@ export default function ContactSection() {
             connect with me on my socials!
           </p>
           <div className={styles.socials}>
+            
             <a
               href="mailto:your.email@example.com"
               target="_blank"
               rel="noopener noreferrer"
               title="Email"
+              className={styles.card}
             >
-              <FaEnvelope /> Email
+              <span className={styles.icon}>
+                <FaEnvelope />
+              </span>
+              Email
             </a>
             <a
               href="https://github.com/your-username"
               target="_blank"
               rel="noopener noreferrer"
               title="Github"
+              className={styles.card}
             >
-              <FaGithub /> GitHub
+              <span className={styles.icon}>
+                <FaGithub />
+              </span>
+              GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/your-username"
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
+              className={styles.card}
             >
-              <FaLinkedin /> LinkedIn
+              <span className={styles.icon}>
+                <FaLinkedin />
+              </span>
+              LinkedIn
+            </a>
+            <a
+              href="https://www.twitter.com/in/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+              className={styles.card}
+            >
+              <span className={styles.icon}>
+                <FaXTwitter />
+              </span>
+              X
             </a>
           </div>
         </div>
-
-        <form className={styles.form}>
-          <div className={styles.formInputWrap}>
-            <label>
-              Name <span className={styles.mandatory}>*</span>
-            </label>
-            <input type="text" placeholder="John Doe" required />
-          </div>
-          <div className={styles.formInputWrap}>
-            <label>
-              Email <span className={styles.mandatory}>*</span>
-            </label>
-          <input type="email" placeholder="abc@gmail.com" required />
-          </div>
-          <div className={styles.formInputWrap}>
-            <label>
-              Message <span className={styles.mandatory}>*</span>
-            </label>
-          <input type="text" placeholder="Message" required />
-          </div>
-          <button type="submit" title="Send">Send Message</button>
-        </form>
       </motion.div>
     </section>
   );
 }
-  
