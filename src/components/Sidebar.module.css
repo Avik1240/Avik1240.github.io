@@ -1,6 +1,6 @@
 .sidebar { position: fixed; max-width: 250px; min-height: 100vh; background-color: #0a0a0a; color: #cfcfcf; padding-top: 20px; width: 100%; }
 .sidebar ul { list-style: none; padding: 0 10px; margin: 0; }
-.sidebar a { color: #cfcfcf; font-weight: 500; text-decoration: none; transition: all .2s ease; font-size: 18px; display: flex; align-items: center; cursor: pointer; padding: 10px 20px; border-radius: 10px; margin-bottom: .5rem;}
+.sidebar a { color: #cfcfcf; font-weight: 500; text-decoration: none; transition: all .2s ease; font-size: 18px; display: flex; align-items: center; cursor: pointer; padding: 10px 15px; border-radius: 10px; margin-bottom: .5rem; }
 .sidebar a svg { margin-right: .5rem; }
-.sidebar a:hover { background-color: #222; }
-.active { background-color: #222; }
+.sidebar a:hover { color: #379a61; background-color: #379a6115; }
+.sidebar a.active { color: #379a61; background-color: #379a6115; }

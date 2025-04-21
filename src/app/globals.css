@@ -2,7 +2,7 @@ html, body { margin: 0; padding: 0; background-color: #121212; color: #cfcfcf; f
 * { box-sizing: border-box; }
 a, button { text-decoration: none; color: inherit; transition: all .2s ease; }
 a:focus, button:focus, a:focus-visible, button:focus-visible, a:focus-within, button:focus-within { outline: none; box-shadow: none; }
-h2 { margin-top: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; }
 ::-moz-selection { color: #000; background: #379a61; text-shadow: none; }
 ::selection { color: #000; background: #379a61; text-shadow: none; }
 button { font-family: "Poppins"; }

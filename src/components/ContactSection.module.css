@@ -4,12 +4,12 @@
 .details { margin-bottom: 40px; }
 .details p { font-size: 16px; color: #cfcfcf; margin-bottom: 20px; }
 .socials { display: flex; justify-content: center; align-items: center; margin-bottom: 20px; }
-.socials a { color: #379a61; font-size: 18px; margin-right: 1.5rem; text-decoration: none; display: flex;align-items: center;}
+.socials a { color: #379a61; font-size: 18px; margin-right: 1.5rem; text-decoration: none; display: flex;align-items: center;font-weight: 500;}
 .socials a svg { margin-right: .5rem;}
 .socials a:hover { color: #379a6195;  }
 .form { display: flex; flex-wrap: wrap;}
 .formInputWrap { width: calc((100% / 3) - 14px); margin-right: 14px; margin-top: 1rem; }
 .formInputWrap label { margin-bottom: 0; display: block; text-align: left;}
-.form button { background-color: #379a61; color: #000; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; }
+.form button { background-color: #379a61; color: #000; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; font-weight: 500;}
 .form button:hover { background-color: #0a0a0a;color: #379a61; }
 .mandatory { color: #f54141; }

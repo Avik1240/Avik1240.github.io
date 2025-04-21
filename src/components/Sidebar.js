@@ -9,6 +9,7 @@ import {
   FaCode,
   FaPhone,
   FaFile,
+  FaChalkboardTeacher,
 } from "react-icons/fa";
 import styles from "./Sidebar.module.css";
 
@@ -65,7 +66,7 @@ export default function Sidebar() {
             activeClass={styles.active}
             title="Experience"
           >
-            <FaCode /> Experience
+            <FaChalkboardTeacher /> Experience
           </Link>
         </li>
         <li>

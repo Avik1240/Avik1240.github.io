@@ -8,5 +8,5 @@
 .description { font-size: 15px; color: #cfcfcf; margin-bottom: 15px; }
 .tech { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
 .tech span { background-color: #379a6115; color: #379a61; padding: 4px 8px; border-radius: 6px; font-size: 14px; }
-.links a { color: #379a61; display: inline-flex; align-items: center; gap: 6px; margin-right: 1.5rem; font-size: 16px; text-decoration: none; }
+.links a { color: #379a61; display: inline-flex; align-items: center; gap: 6px; margin-right: 1.5rem; font-size: 16px; text-decoration: none; font-weight: 500;}
 .links a:hover { color: #379a6195; }
