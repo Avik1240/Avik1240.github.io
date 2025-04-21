@@ -1,0 +1,10 @@
+.experience { background-color: #1e1e1e; padding: 40px; color: #e0e0e0; }
+/* .content { max-width: 900px; margin: 0 auto; } */
+.heading { font-size: 32px; margin-bottom: 40px; color: #00bfff; }
+.timeline { position: relative; margin-left: 20px; border-left: 2px solid #444; padding-left: 20px; }
+.item { position: relative; margin-bottom: 40px; }
+.marker { position: absolute; left: -11px; top: 5px; width: 16px; height: 16px; background-color: #00bfff; border-radius: 50%; border: 2px solid #222; }
+.details { margin-left: 10px; }
+.role { font-size: 20px; color: #ffffff; }
+.company { font-size: 16px; color: #cccccc; margin-bottom: 10px; }
+.description { font-size: 15px; color: #aaaaaa; }

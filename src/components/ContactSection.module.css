@@ -1,0 +1,11 @@
+.contact { background-color: #1b1b1b; padding: 40px; color: #e0e0e0; }
+.container { text-align: center; }
+.heading { font-size: 32px; margin-bottom: 40px; color: #00bfff; }
+.details { margin-bottom: 40px; }
+.details p { font-size: 16px; color: #cccccc; margin-bottom: 20px; }
+.socials a { color: #00bfff; font-size: 18px; margin-right: 16px; text-decoration: none; }
+.socials a:hover { text-decoration: underline; }
+.form { display: flex; flex-wrap: wrap;}
+.form input{ width: 100%; padding: 12px; margin: 10px 0; border-radius: 6px; border: 1px solid #444; background-color: #2a2a2a; color: #e0e0e0; max-width: calc(100% / 3 - 16px);margin-right: 1rem;}
+.form button { background-color: #00bfff; color: #fff; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; }
+.form button:hover { background-color: #008bb9; }

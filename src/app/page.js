@@ -1,0 +1,26 @@
+import HomeSection from '../components/HomeSection';
+import AboutSection from '../components/AboutSection';
+import SkillsSection from '../components/SkillsSection';
+import ExperienceSection from '../components/ExperienceSection';
+import TechStackSection from '../components/TechStackSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
+import Sidebar from '../components/Sidebar';
+import styles from './page.module.css';
+
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <Sidebar />
+      <main className={styles.main}>
+        <HomeSection />
+        <AboutSection />
+        <SkillsSection />
+        <ExperienceSection />
+        <TechStackSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+    </div>
+  );
+}

@@ -1,0 +1,9 @@
+.skills { background-color: #1a1a1a; padding: 40px; color: #e0e0e0; }
+/* .content { max-width: 1000px; margin: 0 auto; } */
+.heading { font-size: 32px; margin-bottom: 40px; color: #00bfff; }
+.grid { display: flex; gap: 40px; flex-wrap: wrap; }
+.category { flex: 1; min-width: 250px; }
+.categoryTitle { font-size: 20px; margin-bottom: 15px; color: #bbbbbb; }
+.skillList { list-style: none; padding: 0; }
+.skillItem { display: flex; align-items: center; gap: 10px; padding: 6px 0; font-size: 16px; color: #d0d0d0; }
+.icon { font-size: 20px; color: #00bfff; }
