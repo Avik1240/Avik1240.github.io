@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./ContactSection.module.css";
+import styles from "./styles/ContactSection.module.css";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -22,7 +22,6 @@ export default function ContactSection() {
             connect with me on my socials!
           </p>
           <div className={styles.socials}>
-            
             <a
               href="mailto:your.email@example.com"
               target="_blank"

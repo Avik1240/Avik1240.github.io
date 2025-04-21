@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./AboutSection.module.css";
+import styles from "./styles/AboutSection.module.css";
 import { motion } from "framer-motion";
 
 export default function AboutSection() {

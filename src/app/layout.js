@@ -8,16 +8,14 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'My Portfolio',
-  description: 'Developer Portfolio',
+  title: "My Portfolio",
+  description: "Developer Portfolio",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

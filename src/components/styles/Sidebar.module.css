@@ -6,7 +6,7 @@
 .sidebar a.active { color: #379a61; background-color: #379a6115; }
 @media (max-width:1199px) {
 	.sidebar { max-width: 68px; }
-	.sidebar a { height: 48px;}
+	.sidebar a { height: 48px; }
 	.sidebar a svg { margin: 0; }
 	.sidebar a span { display: none; }
 }

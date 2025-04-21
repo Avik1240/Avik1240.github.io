@@ -1,23 +1,17 @@
 "use client";
 
-import styles from "./SkillsSection.module.css";
+import styles from "./styles/SkillsSection.module.css";
 import { motion } from "framer-motion";
 import {
-    FaReact,
-    FaNodeJs,
-    FaHtml5,
-    FaCss3Alt,
-    FaJsSquare,
-    FaGitAlt,
-    FaGithub,
-  } from 'react-icons/fa';
-  import {
-    SiNextdotjs,
-    SiMongodb,
-    SiExpress,
-    SiPostman,
-  } from 'react-icons/si';
-  
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+import { SiNextdotjs, SiMongodb, SiExpress, SiPostman } from "react-icons/si";
 
 const techStack = [
   { name: "React", icon: <FaReact /> },

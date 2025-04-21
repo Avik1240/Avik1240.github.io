@@ -33,7 +33,6 @@ a.secondary { border-color: var(--gray-alpha-200); min-width: 158px; }
 	.logo { filter: invert(); }
 }
 .container { display: flex; }
-.main { margin-left: 250px; /* width of sidebar */ padding: 0;width: 100%;}
+.main { margin-left: 250px; /* width of sidebar */ padding: 0; width: 100%; }
 @media (max-width:1199px) {
-    .main{margin-left: 68px;}
-}
+	.main { margin-left: 68px; }}

@@ -11,7 +11,7 @@ import {
   FaFile,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import styles from "./Sidebar.module.css";
+import styles from "./styles/Sidebar.module.css";
 
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState("home");

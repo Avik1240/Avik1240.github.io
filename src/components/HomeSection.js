@@ -1,7 +1,7 @@
 "use client"; // ✅ IMPORTANT FOR FRAMER MOTION IN APP DIR
 
 import { motion } from "framer-motion";
-import styles from "./HomeSection.module.css";
+import styles from "./styles/HomeSection.module.css";
 
 export default function HomeSection() {
   console.log("motion:", motion); // Check if this is undefined

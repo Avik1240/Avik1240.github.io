@@ -1,9 +1,11 @@
 .experience { background-color: #1b1b1b; padding: 40px; color: #cfcfcf; }
+
 /* .content { max-width: 900px; margin: 0 auto; } */
 .heading { font-size: 32px; margin-bottom: 40px; color: #379a61; }
-.timeline { position: relative;border-left: 2px solid #767676; padding-left: 20px; }
-.timeline >div:last-child { margin: 0;}
+.timeline { position: relative; border-left: 2px solid #767676; padding-left: 20px; }
+.timeline >div:last-child { margin: 0; }
 .item { position: relative; margin-bottom: 30px; }
+
 /* .details { margin-left: 10px; } */
 .role { font-size: 20px; color: #cfcfcf; }
 .company { font-size: 16px; color: #cfcfcf; margin-bottom: 10px; }

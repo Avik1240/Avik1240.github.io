@@ -1,26 +1,29 @@
-'use client';
+"use client";
 
-import styles from './ExperienceSection.module.css';
-import { motion } from 'framer-motion';
+import styles from "./styles/ExperienceSection.module.css";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: 'Senior Full Stack Developer',
-    company: 'Tech Innovators Inc.',
-    duration: '2021 - Present',
-    description: 'Building scalable web applications using Node.js, Next.js, and MongoDB. Led a team of developers and handled full project lifecycle.',
+    role: "Senior Full Stack Developer",
+    company: "Tech Innovators Inc.",
+    duration: "2021 - Present",
+    description:
+      "Building scalable web applications using Node.js, Next.js, and MongoDB. Led a team of developers and handled full project lifecycle.",
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Creative Coders',
-    duration: '2017 - 2021',
-    description: 'Worked on frontend and backend with React, Express, and MongoDB. Focused on building reusable components and clean APIs.',
+    role: "Full Stack Developer",
+    company: "Creative Coders",
+    duration: "2017 - 2021",
+    description:
+      "Worked on frontend and backend with React, Express, and MongoDB. Focused on building reusable components and clean APIs.",
   },
   {
-    role: 'Web Developer',
-    company: 'Freelance',
-    duration: '2013 - 2017',
-    description: 'Developed websites for small businesses and startups. Gained strong foundation in JavaScript and UI/UX principles.',
+    role: "Web Developer",
+    company: "Freelance",
+    duration: "2013 - 2017",
+    description:
+      "Developed websites for small businesses and startups. Gained strong foundation in JavaScript and UI/UX principles.",
   },
 ];
 
@@ -40,7 +43,9 @@ export default function ExperienceSection() {
             <div key={index} className={styles.item}>
               <div className={styles.details}>
                 <h3 className={styles.role}>{exp.role}</h3>
-                <p className={styles.company}>{exp.company} — <span>{exp.duration}</span></p>
+                <p className={styles.company}>
+                  {exp.company} — <span>{exp.duration}</span>
+                </p>
                 <p className={styles.description}>{exp.description}</p>
               </div>
             </div>
