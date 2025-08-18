@@ -19,12 +19,12 @@
 .cardBody { padding: 1.5rem; }
 .metaInfo { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
 .metaItem { display: flex; align-items: center; font-size: 0.9rem; color: var(--text-secondary); }
-.metaIcon { margin-right: 0.5rem; color: var(--accent); font-size: 0.9rem; }
+.metaIcon { margin-right: 0.5rem; color: var(--primary); font-size: 0.9rem; }
 .location { font-size: 0.9rem; color: var(--text-secondary); }
 .description { font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.5rem; }
-.achievementsContainer { background: rgba(var(--accent-rgb), 0.05); border-radius: 8px; padding: 1.25rem; border-left: 3px solid var(--accent); }
+.achievementsContainer { background: rgba(var(--accent-rgb), 0.05); border-radius: 0px; padding: 1.25rem; border-left: 3px solid var(--primary); }
 .achievementsHeading { display: flex; align-items: center; font-size: 1rem; font-weight: 600; margin-top: 0; margin-bottom: 1rem; color: var(--text-primary); }
-.achievementIcon { color: var(--accent); margin-right: 0.5rem; font-size: 1rem; }
+.achievementIcon { color: var(--primary); margin-right: 0.5rem; font-size: 1rem; }
 .achievements { margin: 0; padding-left: 1.5rem; }
 .achievementItem { margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
 .achievementItem:last-child { margin-bottom: 0; }
@@ -32,6 +32,7 @@
 	.heading { font-size: 2.2rem; }
 	.role { font-size: 1.4rem; }
 	.description { font-size: 0.92rem; }
+	.card{width: 100%;}
 }
 @media (max-width:768px) {
 	.experience { padding: 5rem 0; }
@@ -56,9 +57,8 @@
 	.headingBar { width: 60px; height: 3px; }
 	.headingContainer { margin-bottom: 3rem; }
 	.experienceCards { gap: 2rem; }
-	.cardHeader { padding: 1rem; }
-	.iconContainer { width: 36px; height: 36px; min-width: 36px; }
-	.icon { font-size: 1rem; }
+	.cardHeader { padding: 1rem; flex-direction: column;align-items: start;}
+	.iconContainer { margin-bottom: 1rem;margin-right: 0;}
 	.role { font-size: 1.1rem; }
 	.company { font-size: 0.85rem; }
 	.cardBody { padding: 1rem; }
@@ -74,8 +74,6 @@
 	.heading { font-size: 1.6rem; }
 	.role { font-size: 1rem; }
 	.company { font-size: 0.8rem; }
-	.iconContainer { width: 32px; height: 32px; min-width: 32px; }
-	.icon { font-size: 0.9rem; }
 	.metaItem { font-size: 0.75rem; }
 	.description { font-size: 0.8rem; line-height: 1.5; }
 	.achievementsHeading { font-size: 0.85rem; }
@@ -85,8 +83,6 @@
 	.heading { font-size: 1.5rem; }
 	.role { font-size: 0.95rem; }
 	.company { font-size: 0.75rem; }
-	.iconContainer { width: 28px; height: 28px; min-width: 28px; }
-	.icon { font-size: 0.8rem; }
 	.description { font-size: 0.75rem; }
 	.achievementItem { font-size: 0.7rem; }
 }

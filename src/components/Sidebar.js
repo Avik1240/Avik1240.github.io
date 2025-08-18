@@ -121,7 +121,7 @@ export default function Sidebar() {
               </Link>
             </li>
           ))}
-          <li>
+          {/* <li>
             <a
               href="https://yourdomain.com/your-resume.pdf"
               target="_blank"
@@ -132,7 +132,7 @@ export default function Sidebar() {
             >
               <FaFile /> <span>Resume</span>
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>

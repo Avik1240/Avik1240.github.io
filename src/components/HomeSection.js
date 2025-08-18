@@ -49,9 +49,9 @@ export default function HomeSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <a href="#contact" className={styles.primaryBtn}>
+            {/* <a href="#contact" className={styles.primaryBtn}>
               Get in Touch
-            </a>
+            </a> */}
             <a
               href="/resume.pdf"
               target="_blank"

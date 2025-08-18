@@ -6,6 +6,11 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
 const projects = [
   {
     name: "Enterprise Cloud Platform",
@@ -69,7 +74,6 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
-
   return (
     <section id="projects" className={styles.projects}>
       <div className={styles.container}>
@@ -95,25 +99,93 @@ export default function ProjectsSection() {
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={"auto"}
+            slidesPerView="auto"
+            spaceBetween={30}
             coverflowEffect={{
-              rotate: 0,
+              rotate: 50,
               stretch: 0,
               depth: 100,
-              modifier: 2.5,
+              modifier: 1,
               slideShadows: true,
             }}
             pagination={{
               clickable: true,
-              el: `.${styles.swiperPagination}`,
-              bulletClass: `${styles.paginationBullet}`,
-              bulletActiveClass: `${styles.paginationBulletActive}`,
+              dynamicBullets: true,
             }}
             autoplay={{
-              delay: 5000,
+              delay: 4000,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
+            loop={true}
             className={styles.swiper}
+            breakpoints={{
+              // Mobile (320px and up)
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                coverflowEffect: {
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 0,
+                  modifier: 1,
+                  slideShadows: false,
+                },
+                centeredSlides: true,
+              },
+              // Small mobile (480px and up)
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                coverflowEffect: {
+                  rotate: 10,
+                  stretch: 0,
+                  depth: 20,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                centeredSlides: true,
+              },
+              // Medium mobile (600px and up)
+              600: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                coverflowEffect: {
+                  rotate: 20,
+                  stretch: 0,
+                  depth: 40,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                centeredSlides: true,
+              },
+              // Tablet (768px and up)
+              768: {
+                slidesPerView: 1.5,
+                spaceBetween: 25,
+                coverflowEffect: {
+                  rotate: 30,
+                  stretch: 0,
+                  depth: 60,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                centeredSlides: true,
+              },
+              // Small desktop (992px and up)
+              992: {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+                coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                centeredSlides: true,
+              },
+            }}
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index} className={styles.swiperSlide}>
@@ -172,7 +244,6 @@ export default function ProjectsSection() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className={styles.swiperPagination}></div>
         </motion.div>
       </div>
     </section>
