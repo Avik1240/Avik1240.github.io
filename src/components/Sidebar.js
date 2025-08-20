@@ -17,14 +17,38 @@ import styles from "./styles/Sidebar.module.css";
 
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState("home");
+  // Initialize with false to prevent hydration mismatch and layout shift
   const [isOpen, setIsOpen] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
-    // Register scroll event listeners from react-scroll
-    Events.scrollEvent.register("begin", () => {});
-    Events.scrollEvent.register("end", () => {});
+    // Initialize sidebar state based on screen size immediately after mount
+    const initializeSidebar = () => {
+      if (window.innerWidth > 600) {
+        setIsOpen(true);
+      } else {
+        setIsOpen(false);
+      }
+      setIsInitialized(true);
+    };
 
-    // Close sidebar when clicking outside on small screens
+    // Use a small timeout to ensure CSS is loaded
+    const timeoutId = setTimeout(initializeSidebar, 0);
+
+    // Cleanup scroll events
+    Events.scrollEvent.register('begin', () => {});
+    Events.scrollEvent.register('end', () => {});
+
+    return () => {
+      clearTimeout(timeoutId);
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []); // Run only once on mount
+
+  useEffect(() => {
+    if (!isInitialized) return;
+
     const handleClickOutside = (event) => {
       const sidebar = document.getElementById("sidebar");
       const toggleButton = document.getElementById("sidebar-toggle");
@@ -40,28 +64,22 @@ export default function Sidebar() {
       }
     };
 
-    // Add event listener for window resize
     const handleResize = () => {
       if (window.innerWidth > 600) {
-        setIsOpen(true); // Always show sidebar on larger screens
-      } else if (!isOpen) {
-        setIsOpen(false); // Keep sidebar closed on small screens if it was closed
+        setIsOpen(true); // Always open on larger screens
+      } else {
+        setIsOpen(false); // Always close on mobile screens
       }
     };
-
-    // Initialize sidebar state based on screen size
-    handleResize();
 
     document.addEventListener("mousedown", handleClickOutside);
     window.addEventListener("resize", handleResize);
 
     return () => {
-      Events.scrollEvent.remove("begin");
-      Events.scrollEvent.remove("end");
       document.removeEventListener("mousedown", handleClickOutside);
       window.removeEventListener("resize", handleResize);
     };
-  }, [isOpen]);
+  }, [isInitialized, isOpen]); // Dependencies for the event listeners
 
   const handleSetActive = (to) => {
     setActiveSection(to);
@@ -73,7 +91,7 @@ export default function Sidebar() {
 
   const handleLinkClick = () => {
     // Close sidebar after clicking a link on mobile
-    if (window.innerWidth <= 600) {
+    if (isInitialized && window.innerWidth <= 600) {
       setIsOpen(false);
     }
   };
@@ -102,6 +120,12 @@ export default function Sidebar() {
       <nav
         id="sidebar"
         className={`${styles.sidebar} ${isOpen ? styles.open : styles.closed}`}
+        style={{ 
+          // Add a smooth transition and prevent layout shift
+          visibility: isInitialized ? 'visible' : 'hidden',
+          opacity: isInitialized ? 1 : 0,
+          transition: isInitialized ? 'transform 0.3s ease, opacity 0.3s ease' : 'opacity 0.3s ease'
+        }}
       >
         <ul>
           {navLinks.map(({ to, icon, label }) => (

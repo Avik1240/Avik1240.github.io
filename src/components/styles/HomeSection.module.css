@@ -1,5 +1,5 @@
 .home { min-height: 100vh; background-color: var(--background); color: var(--text-primary); display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; }
-.container { width: 100%;margin: 0 auto; padding: 0 2rem; z-index: 1; }
+.container { width: 100%; margin: 0 auto; padding: 0 2rem; z-index: 1; }
 .content { display: flex; flex-direction: column; align-items: flex-start; max-width: 800px; }
 .subtitle { font-size: 1.2rem; font-weight: 500; color: var(--primary); margin-bottom: 1rem; letter-spacing: 1px; text-transform: uppercase; }
 .title { font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2; }
@@ -14,6 +14,28 @@
 .socialLinks { display: flex; gap: 1.5rem; }
 .socialLinks a { color: var(--text-secondary); font-size: 1.5rem; transition: all 0.3s ease; }
 .socialLinks a:hover { color: var(--primary); transform: translateY(-3px); }
+
+/* Add these classes to your existing HomeSection.module.css file */
+.typewriter { position: relative; display: inline-block; }
+.cursor { display: inline-block; font-weight: 400; color: var(--primary); animation: cursorSolid 0.8s infinite ease-in-out; margin-left: 2px; }
+.cursorBlink { animation: cursorBlink 1s infinite ease-in-out; }
+@keyframes cursorSolid {
+	0%, 50% { opacity: 1; }
+	51%, 100% { opacity: 0; }
+}
+@keyframes cursorBlink {
+	0%, 50% { opacity: 1; }
+	51%, 100% { opacity: 0; }
+}
+
+/* Add these classes to your existing HomeSection.module.css file */
+.typewriter { position: relative; display: inline-block; }
+.cursor { display: inline-block; font-weight: 400; color: var(--primary); margin-left: 2px; }
+.cursorBlink { animation: cursorBlink 1s infinite ease-in-out; }
+@keyframes cursorBlink {
+	0%, 50% { opacity: 1; }
+	51%, 100% { opacity: 0; }
+}
 @media (max-width:768px) {
 	.content { align-items: center; text-align: center; }
 	.title { font-size: 2.5rem; }

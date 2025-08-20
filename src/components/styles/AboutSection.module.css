@@ -1,7 +1,7 @@
 .about { padding: 4rem 0; color: var(--text-primary); }
 .container { width: 100%;margin: 0 auto; padding: 0 2rem; }
 .content { width: 100%; }
-.headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 4rem; }
+.headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem; }
 .heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); position: relative; width: 100%;}
 .headingBar { width: 80px; height: 4px; background: var(--gradient); border-radius: 2px; }
 .aboutContent { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
@@ -20,14 +20,14 @@
 .specializationIcon { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; }
 .specializationTitle { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.8rem; color: var(--text-primary); }
 .specializationDescription { font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary); }
-@media (max-width:992px) {
+@media (max-width:991px) {
 	.aboutContent { grid-template-columns: 1fr; gap: 3rem; }
 	.specializationsGrid { grid-template-columns: 1fr 1fr; }
 	.heading { font-size: 2.2rem; }
 	.bioHeading, .specializationsHeading { font-size: 1.4rem; }
 }
-@media (max-width:768px) {
-	.about { padding: 5rem 0; }
+@media (max-width:767px) {
+	.about { padding: 2rem 0; }
 	.specializationsGrid { grid-template-columns: 1fr; }
 	.keyPoints { flex-direction: column; gap: 1.5rem; }
 	.heading { font-size: 2rem; }
@@ -36,8 +36,7 @@
 	.specializationTitle { font-size: 1.1rem; }
 	.specializationDescription { font-size: 0.9rem; }
 }
-@media (max-width:576px) {
-	.about { padding: 4rem 0; }
+@media (max-width:575px) {
 	.container { padding: 0 1.5rem; }
 	.heading { font-size: 1.8rem; }
 	.headingBar { width: 60px; height: 3px; }
@@ -48,7 +47,6 @@
 	.specializationIcon { font-size: 1.8rem; margin-bottom: 0.8rem; }
 }
 @media (max-width:375px) {
-	.about { padding: 3.5rem 0; }
 	.container { padding: 0 1rem; }
 	.heading { font-size: 1.6rem; }
 	.headingContainer { margin-bottom: 3rem; }

@@ -6,8 +6,9 @@
 .sidebar a.active { color: #379a61; background-color: #379a6115; }
 
 /* Toggle button for mobile */
-.toggleButton { display: none; position: fixed; top: 15px; right: 15px; z-index: 200; background-color: #0a0a0a; color: #cfcfcf; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; }
-.toggleButton:hover { background-color: #1a1a1a; color: #379a61; }
+.toggleButton { display: none; position: fixed; top: 15px; right: 15px; z-index: 200; background-color: #0a0a0a; color: #cfcfcf; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; padding: 0;}
+.toggleButton:focus,.toggleButton:focus-visible,.toggleButton:focus-within,.toggleButton:active { outline: none; box-shadow: none; }
+.toggleButton:hover { color: #fff; }
 @media (max-width:1199px) {
 	.sidebar { max-width: 68px; }
 	.sidebar a { height: 48px; justify-content: center; /* Center icons when collapsed */ padding: 10px 8px; /* Reduce padding */ }
