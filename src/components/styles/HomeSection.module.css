@@ -1,4 +1,4 @@
-.home { min-height: 100vh; background-color: var(--background); color: var(--text-primary); display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; }
+.home { min-height: 100vh;  color: var(--text-primary); display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; }
 .container { width: 100%; margin: 0 auto; padding: 0 2rem; z-index: 1; }
 .content { display: flex; flex-direction: column; align-items: flex-start; max-width: 800px; }
 .subtitle { font-size: 1.2rem; font-weight: 500; color: var(--primary); margin-bottom: 1rem; letter-spacing: 1px; text-transform: uppercase; }

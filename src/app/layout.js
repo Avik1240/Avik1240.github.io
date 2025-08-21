@@ -3,6 +3,7 @@ import "./globals.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import ParallaxBackground from '../components/ParallaxBackground';
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -34,7 +35,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ParallaxBackground />
+        {children}</body>
     </html>
   );
 }
