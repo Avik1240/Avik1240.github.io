@@ -1,3 +1,4 @@
+// **********PARALLAX EXAMPLE 1 ********* */
 // 'use client';
 
 // import React, { useEffect, useRef, useState, useCallback } from 'react';
@@ -55,24 +56,18 @@
 //       const pulse = Math.sin(this.pulsePhase) * 0.3 + 0.7;
 //       const alpha = this.activation * pulse;
       
-//       // Glow effect with dark theme
+//       // Glow effect
 //       const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size * 2);
-//       gradient.addColorStop(0, `rgba(10, 10, 10, ${alpha * 0.9})`);
-//       gradient.addColorStop(0.3, `rgba(55, 154, 97, ${alpha * 0.6})`);
-//       gradient.addColorStop(0.7, `rgba(10, 10, 10, ${alpha * 0.3})`);
-//       gradient.addColorStop(1, `rgba(10, 10, 10, 0)`);
+//       gradient.addColorStop(0, `rgba(55, 154, 97, ${alpha * 0.8})`);
+//       gradient.addColorStop(0.5, `rgba(55, 154, 97, ${alpha * 0.4})`);
+//       gradient.addColorStop(1, `rgba(55, 154, 97, 0)`);
       
 //       ctx.fillStyle = gradient;
 //       ctx.beginPath();
 //       ctx.arc(this.x, this.y, this.size * 2, 0, Math.PI * 2);
 //       ctx.fill();
 
-//       // Core node with dark accent
-//       ctx.fillStyle = `rgba(10, 10, 10, ${alpha * 0.8})`;
-//       ctx.beginPath();
-//       ctx.arc(this.x, this.y, this.size + 1, 0, Math.PI * 2);
-//       ctx.fill();
-      
+//       // Core node
 //       ctx.fillStyle = `rgba(55, 154, 97, ${alpha})`;
 //       ctx.beginPath();
 //       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -95,8 +90,7 @@
 //       this.life = 1;
 //       this.maxLife = 1;
 //       this.size = 2 + Math.random() * 3;
-//       this.hue = Math.random() > 0.5 ? 120 : 0; // Green or dark theme
-//       this.darkAccent = Math.random() > 0.3;
+//       this.hue = 120 + Math.random() * 60; // Green to cyan range
 //     }
 
 //     update() {
@@ -116,33 +110,20 @@
 //     }
 
 //     draw(ctx) {
-//       // Draw trail with dark theme
+//       // Draw trail
 //       for (let i = 0; i < this.trail.length; i++) {
 //         const point = this.trail[i];
-//         const alpha = (i / this.trail.length) * point.life * 0.6;
+//         const alpha = (i / this.trail.length) * point.life * 0.5;
 //         const size = this.size * (i / this.trail.length) * 0.5;
         
-//         if (this.darkAccent) {
-//           ctx.fillStyle = `rgba(10, 10, 10, ${alpha})`;
-//         } else {
-//           ctx.fillStyle = `hsla(${this.hue}, 70%, 60%, ${alpha})`;
-//         }
+//         ctx.fillStyle = `hsla(${this.hue}, 70%, 60%, ${alpha})`;
 //         ctx.beginPath();
 //         ctx.arc(point.x, point.y, size, 0, Math.PI * 2);
 //         ctx.fill();
 //       }
 
-//       // Draw main particle with dark accent
-//       if (this.darkAccent) {
-//         ctx.fillStyle = `rgba(10, 10, 10, ${this.life * 0.8})`;
-//         ctx.beginPath();
-//         ctx.arc(this.x, this.y, this.size + 1, 0, Math.PI * 2);
-//         ctx.fill();
-        
-//         ctx.fillStyle = `rgba(55, 154, 97, ${this.life})`;
-//       } else {
-//         ctx.fillStyle = `hsla(${this.hue}, 80%, 70%, ${this.life})`;
-//       }
+//       // Draw main particle
+//       ctx.fillStyle = `hsla(${this.hue}, 80%, 70%, ${this.life})`;
 //       ctx.beginPath();
 //       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
 //       ctx.fill();
@@ -248,21 +229,11 @@
 //         node.update(mousePosition.x, mousePosition.y, time);
 //       });
 
-//       // Draw connections with dark theme
+//       // Draw connections
 //       particles.connections.forEach(connection => {
 //         const alpha = (connection.from.activation + connection.to.activation) * 0.5 * connection.strength;
-        
-//         // Create gradient connection
-//         const gradient = ctx.createLinearGradient(
-//           connection.from.x, connection.from.y,
-//           connection.to.x, connection.to.y
-//         );
-//         gradient.addColorStop(0, `rgba(10, 10, 10, ${alpha * 0.6})`);
-//         gradient.addColorStop(0.5, `rgba(55, 154, 97, ${alpha * 0.4})`);
-//         gradient.addColorStop(1, `rgba(10, 10, 10, ${alpha * 0.6})`);
-        
-//         ctx.strokeStyle = gradient;
-//         ctx.lineWidth = connection.strength * 2.5;
+//         ctx.strokeStyle = `rgba(55, 154, 97, ${alpha * 0.3})`;
+//         ctx.lineWidth = connection.strength * 2;
 //         ctx.beginPath();
 //         ctx.moveTo(connection.from.x, connection.from.y);
 //         ctx.lineTo(connection.to.x, connection.to.y);
@@ -310,7 +281,7 @@
 //           height: '120vh',
 //           zIndex: -1,
 //           overflow: 'hidden',
-//           background: 'linear-gradient(135deg, #0a0a0a 0%, var(--background) 50%, #0a0a0a 100%)',
+//           background: 'var(--background)',
 //         }}
 //       >
 //         {/* Neural network canvas */}
@@ -325,7 +296,7 @@
 //           }}
 //         />
 
-//         {/* Coding-inspired Shapes */}
+//         {/* Floating Geometric Shapes */}
 //         <div
 //           style={{
 //             position: 'absolute',
@@ -334,128 +305,103 @@
 //             pointerEvents: 'none',
 //           }}
 //         >
-//           {/* Bracket Shapes */}
-//           {Array.from({ length: 12 }, (_, index) => (
-//             <div
-//               key={`bracket-${index}`}
-//               style={{
-//                 position: 'absolute',
-//                 left: `${10 + (index * 15) % 80}%`,
-//                 top: `${5 + (index * 25) % 90}%`,
-//                 width: `${25 + index * 2}px`,
-//                 height: `${30 + index * 2}px`,
-//                 border: `2px solid ${index % 2 === 0 ? '#0a0a0a' : 'var(--primary)'}`,
-//                 borderRight: 'none',
-//                 borderRadius: '8px 0 0 8px',
-//                 opacity: 0.6,
-//                 animation: `bracketFloat ${10 + index * 1.5}s infinite ease-in-out`,
-//                 animationDelay: `${index * 0.8}s`,
-//               }}
-//             />
-//           ))}
-
-//           {/* Function Parentheses */}
+//           {/* Hexagons */}
 //           {Array.from({ length: 8 }, (_, index) => (
 //             <div
-//               key={`paren-${index}`}
+//               key={`hex-${index}`}
 //               style={{
 //                 position: 'absolute',
-//                 left: `${20 + (index * 18) % 60}%`,
-//                 top: `${15 + (index * 30) % 70}%`,
-//                 width: `${20 + index}px`,
-//                 height: `${35 + index * 2}px`,
-//                 border: `2.5px solid ${index % 3 === 0 ? '#0a0a0a' : 'var(--primary)'}`,
-//                 borderRight: 'none',
-//                 borderLeft: 'none',
-//                 borderRadius: '50%',
-//                 opacity: 0.5,
-//                 transform: index % 2 === 0 ? 'scaleX(-1)' : 'scaleX(1)',
-//                 animation: `parenFloat ${12 + index * 2}s infinite ease-in-out`,
-//                 animationDelay: `${index * 1.2}s`,
+//                 left: `${15 + (index * 22) % 70}%`,
+//                 top: `${10 + (index * 30) % 80}%`,
+//                 width: `${20 + index * 3}px`,
+//                 height: `${20 + index * 3}px`,
+//                 border: `2px solid var(--primary)`,
+//                 opacity: 0.4,
+//                 clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+//                 animation: `rotateFloat ${12 + index * 3}s infinite ease-in-out`,
+//                 animationDelay: `${index * 1.5}s`,
 //               }}
 //             />
 //           ))}
-
-//           {/* Code Block Squares */}
-//           {Array.from({ length: 15 }, (_, index) => (
-//             <div
-//               key={`block-${index}`}
-//               style={{
-//                 position: 'absolute',
-//                 left: `${5 + (index * 12) % 90}%`,
-//                 top: `${8 + (index * 22) % 85}%`,
-//                 width: `${15 + index}px`,
-//                 height: `${15 + index}px`,
-//                 backgroundColor: index % 4 === 0 ? '#0a0a0a' : 'transparent',
-//                 border: `2px solid ${index % 3 === 0 ? '#0a0a0a' : 'var(--primary)'}`,
-//                 borderRadius: '3px',
-//                 opacity: 0.7,
-//                 animation: `blockFloat ${8 + index}s infinite ease-in-out`,
-//                 animationDelay: `${index * 0.5}s`,
-//               }}
-//             />
-//           ))}
-
-//           {/* Terminal Cursors */}
+          
+//           {/* Triangles */}
 //           {Array.from({ length: 6 }, (_, index) => (
 //             <div
-//               key={`cursor-${index}`}
+//               key={`triangle-${index}`}
 //               style={{
 //                 position: 'absolute',
-//                 left: `${25 + (index * 20) % 50}%`,
-//                 top: `${20 + (index * 35) % 60}%`,
-//                 width: '3px',
-//                 height: `${20 + index * 3}px`,
-//                 backgroundColor: index % 2 === 0 ? '#0a0a0a' : 'var(--primary)',
-//                 opacity: 0.8,
-//                 animation: `cursorBlink ${1 + index * 0.3}s infinite ease-in-out`,
-//                 animationDelay: `${index * 0.7}s`,
+//                 left: `${20 + (index * 25) % 60}%`,
+//                 top: `${25 + (index * 35) % 50}%`,
+//                 width: 0,
+//                 height: 0,
+//                 borderLeft: `${15 + index * 2}px solid transparent`,
+//                 borderRight: `${15 + index * 2}px solid transparent`,
+//                 borderBottom: `${20 + index * 3}px solid var(--primary)`,
+//                 opacity: 0.3,
+//                 animation: `triangleFloat ${10 + index * 2}s infinite ease-in-out`,
+//                 animationDelay: `${index * 2}s`,
 //               }}
 //             />
 //           ))}
 
-//           {/* Angle Brackets < > */}
+//           {/* Circles */}
 //           {Array.from({ length: 10 }, (_, index) => (
 //             <div
-//               key={`angle-${index}`}
+//               key={`circle-${index}`}
 //               style={{
 //                 position: 'absolute',
-//                 left: `${15 + (index * 16) % 70}%`,
-//                 top: `${12 + (index * 28) % 75}%`,
-//                 width: `${18 + index}px`,
-//                 height: `${18 + index}px`,
-//                 border: `2px solid ${index % 2 === 0 ? '#0a0a0a' : 'var(--primary)'}`,
-//                 borderRight: 'none',
-//                 borderBottom: 'none',
-//                 transform: index % 2 === 0 ? 'rotate(-45deg)' : 'rotate(135deg)',
-//                 opacity: 0.6,
-//                 animation: `angleFloat ${9 + index * 1.8}s infinite ease-in-out`,
+//                 left: `${8 + (index * 19) % 85}%`,
+//                 top: `${5 + (index * 28) % 90}%`,
+//                 width: `${12 + index * 2}px`,
+//                 height: `${12 + index * 2}px`,
+//                 border: `1.5px solid var(--primary)`,
+//                 borderRadius: '50%',
+//                 opacity: 0.35,
+//                 animation: `pulseFloat ${8 + index * 1.5}s infinite ease-in-out`,
 //                 animationDelay: `${index * 1}s`,
+//               }}
+//             />
+//           ))}
+
+//           {/* Diamonds */}
+//           {Array.from({ length: 5 }, (_, index) => (
+//             <div
+//               key={`diamond-${index}`}
+//               style={{
+//                 position: 'absolute',
+//                 left: `${30 + (index * 20) % 40}%`,
+//                 top: `${15 + (index * 40) % 70}%`,
+//                 width: `${18 + index * 2}px`,
+//                 height: `${18 + index * 2}px`,
+//                 border: `2px solid var(--primary)`,
+//                 opacity: 0.4,
+//                 transform: 'rotate(45deg)',
+//                 animation: `diamondFloat ${14 + index * 2}s infinite ease-in-out`,
+//                 animationDelay: `${index * 3}s`,
 //               }}
 //             />
 //           ))}
 //         </div>
 
-//         {/* Enhanced grid patterns with dark theme */}
+//         {/* Enhanced grid patterns */}
 //         <div
 //           style={{
 //             position: 'absolute',
 //             width: '100%',
 //             height: '100%',
 //             background: `
-//               linear-gradient(90deg, rgba(10, 10, 10, 0.4) 1px, transparent 1px),
-//               linear-gradient(0deg, rgba(10, 10, 10, 0.4) 1px, transparent 1px),
-//               linear-gradient(90deg, rgba(55, 154, 97, 0.1) 1px, transparent 1px),
-//               linear-gradient(0deg, rgba(55, 154, 97, 0.1) 1px, transparent 1px),
-//               radial-gradient(circle, rgba(10, 10, 10, 0.2) 1px, transparent 1px)
+//               linear-gradient(90deg, rgba(55, 154, 97, 0.08) 1px, transparent 1px),
+//               linear-gradient(0deg, rgba(55, 154, 97, 0.08) 1px, transparent 1px),
+//               linear-gradient(45deg, rgba(55, 154, 97, 0.04) 1px, transparent 1px),
+//               linear-gradient(-45deg, rgba(55, 154, 97, 0.04) 1px, transparent 1px)
 //             `,
-//             backgroundSize: '30px 30px, 30px 30px, 60px 60px, 60px 60px, 15px 15px',
-//             animation: 'darkPatternFlow 30s linear infinite',
-//             opacity: 0.8,
+//             backgroundSize: '50px 50px, 50px 50px, 35px 35px, 35px 35px',
+//             animation: 'patternFlow 25s linear infinite',
+//             opacity: 0.6,
 //           }}
 //         />
 
-//         {/* Dark gradient overlays */}
+//         {/* Gradient overlays for depth */}
 //         <div
 //           style={{
 //             position: 'absolute',
@@ -464,89 +410,77 @@
 //             width: '100%',
 //             height: '100%',
 //             background: `
-//               radial-gradient(circle at 80% 20%, rgba(10, 10, 10, 0.6) 0%, transparent 40%),
-//               radial-gradient(circle at 20% 80%, rgba(10, 10, 10, 0.4) 0%, transparent 40%),
-//               radial-gradient(circle at 60% 60%, rgba(55, 154, 97, 0.08) 0%, transparent 30%),
-//               linear-gradient(135deg, rgba(10, 10, 10, 0.3) 0%, transparent 30%, rgba(10, 10, 10, 0.3) 70%, transparent 100%)
+//               radial-gradient(circle at 80% 20%, rgba(55, 154, 97, 0.08) 0%, transparent 50%),
+//               radial-gradient(circle at 20% 80%, rgba(55, 154, 97, 0.06) 0%, transparent 50%),
+//               linear-gradient(135deg, rgba(55, 154, 97, 0.02) 0%, transparent 50%, rgba(55, 154, 97, 0.02) 100%)
 //             `,
 //           }}
 //         />
 //       </div>
 
 //       <style jsx>{`
-//         @keyframes bracketFloat {
+//         @keyframes rotateFloat {
 //           0%, 100% {
-//             transform: translateY(0px) rotateY(0deg);
+//             transform: translateY(0px) rotate(0deg);
+//             opacity: 0.4;
+//           }
+//           25% {
+//             transform: translateY(-25px) rotate(90deg);
 //             opacity: 0.6;
 //           }
 //           50% {
-//             transform: translateY(-30px) rotateY(180deg);
-//             opacity: 0.8;
-//           }
-//         }
-
-//         @keyframes parenFloat {
-//           0%, 100% {
-//             transform: translateY(0px) scaleY(1);
+//             transform: translateY(-40px) rotate(180deg);
 //             opacity: 0.5;
-//           }
-//           33% {
-//             transform: translateY(-20px) scaleY(1.3);
-//             opacity: 0.7;
-//           }
-//           66% {
-//             transform: translateY(-10px) scaleY(0.8);
-//             opacity: 0.6;
-//           }
-//         }
-
-//         @keyframes blockFloat {
-//           0%, 100% {
-//             transform: translateY(0px) rotate(0deg) scale(1);
-//             opacity: 0.7;
-//           }
-//           25% {
-//             transform: translateY(-15px) rotate(90deg) scale(1.1);
-//             opacity: 0.9;
 //           }
 //           75% {
-//             transform: translateY(-25px) rotate(270deg) scale(0.9);
-//             opacity: 0.5;
+//             transform: translateY(-15px) rotate(270deg);
+//             opacity: 0.7;
 //           }
 //         }
 
-//         @keyframes cursorBlink {
-//           0%, 50% {
-//             opacity: 0.8;
-//             transform: scaleY(1);
-//           }
-//           51%, 100% {
-//             opacity: 0.2;
-//             transform: scaleY(1.2);
-//           }
-//         }
-
-//         @keyframes angleFloat {
+//         @keyframes triangleFloat {
 //           0%, 100% {
-//             transform: translateY(0px) rotate(-45deg) scale(1);
-//             opacity: 0.6;
+//             transform: translateY(0px) rotate(0deg) scale(1);
+//             opacity: 0.3;
 //           }
 //           33% {
-//             transform: translateY(-25px) rotate(45deg) scale(1.2);
-//             opacity: 0.8;
+//             transform: translateY(-30px) rotate(120deg) scale(1.2);
+//             opacity: 0.5;
 //           }
 //           66% {
-//             transform: translateY(15px) rotate(135deg) scale(0.9);
+//             transform: translateY(20px) rotate(240deg) scale(0.8);
 //             opacity: 0.4;
 //           }
 //         }
 
-//         @keyframes darkPatternFlow {
+//         @keyframes pulseFloat {
+//           0%, 100% {
+//             transform: translateY(0px) scale(1);
+//             opacity: 0.35;
+//           }
+//           50% {
+//             transform: translateY(-20px) scale(1.3);
+//             opacity: 0.6;
+//           }
+//         }
+
+//         @keyframes diamondFloat {
+//           0%, 100% {
+//             transform: translateY(0px) rotate(45deg) scale(1);
+//             opacity: 0.4;
+//           }
+//           50% {
+//             transform: translateY(-35px) rotate(225deg) scale(1.1);
+//             opacity: 0.6;
+//           }
+//         }
+
+//         @keyframes patternFlow {
 //           0% {
-//             background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+//             background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%;
 //           }
 //           100% {
-//             background-position: 30px 30px, 30px 30px, 60px 60px, 60px 60px, 15px 15px;
+//             background-position: 50px 50px, 50px 50px, 35px 35px, 35px 35px;
 //           }
 //         }
 
@@ -569,6 +503,9 @@
 // export default ParallaxBackground;
 
 
+
+
+// **********PARALLAX EXAMPLE 2 ********* */
 'use client';
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
@@ -866,108 +803,50 @@ const ParallaxBackground = () => {
           }}
         />
 
-        {/* Floating Geometric Shapes */}
+        {/* Floating AI/Tech Keywords */}
         <div
           style={{
             position: 'absolute',
             width: '100%',
             height: '100%',
             pointerEvents: 'none',
+            opacity: 0.1,
           }}
         >
-          {/* Hexagons */}
-          {Array.from({ length: 8 }, (_, index) => (
+          {['C++', 'Prompt Engineering', 'React.js', 'Node.js', 'Next.js', 'API Design', 'AI Research', 'Full Stack', 'Research', 'Innovation','Web Accessibility','Git & GitLab','VS Code','Play with AI'].map((keyword, index) => (
             <div
-              key={`hex-${index}`}
+              key={keyword}
               style={{
                 position: 'absolute',
-                left: `${15 + (index * 22) % 70}%`,
-                top: `${10 + (index * 30) % 80}%`,
-                width: `${20 + index * 3}px`,
-                height: `${20 + index * 3}px`,
-                border: `2px solid var(--primary)`,
-                opacity: 0.4,
-                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-                animation: `rotateFloat ${12 + index * 3}s infinite ease-in-out`,
-                animationDelay: `${index * 1.5}s`,
-              }}
-            />
-          ))}
-          
-          {/* Triangles */}
-          {Array.from({ length: 6 }, (_, index) => (
-            <div
-              key={`triangle-${index}`}
-              style={{
-                position: 'absolute',
-                left: `${20 + (index * 25) % 60}%`,
-                top: `${25 + (index * 35) % 50}%`,
-                width: 0,
-                height: 0,
-                borderLeft: `${15 + index * 2}px solid transparent`,
-                borderRight: `${15 + index * 2}px solid transparent`,
-                borderBottom: `${20 + index * 3}px solid var(--primary)`,
-                opacity: 0.3,
-                animation: `triangleFloat ${10 + index * 2}s infinite ease-in-out`,
+                left: `${10 + (index * 18) % 80}%`,
+                top: `${20 + (index * 25) % 60}%`,
+                fontSize: `${12 + index % 8}px`,
+                color: 'var(--primary)',
+                fontFamily: 'monospace',
+                fontWeight: 'bold',
+                animation: `float ${15 + index * 2}s infinite ease-in-out`,
                 animationDelay: `${index * 2}s`,
+                transform: `rotate(${index * 15}deg)`,
               }}
-            />
-          ))}
-
-          {/* Circles */}
-          {Array.from({ length: 10 }, (_, index) => (
-            <div
-              key={`circle-${index}`}
-              style={{
-                position: 'absolute',
-                left: `${8 + (index * 19) % 85}%`,
-                top: `${5 + (index * 28) % 90}%`,
-                width: `${12 + index * 2}px`,
-                height: `${12 + index * 2}px`,
-                border: `1.5px solid var(--primary)`,
-                borderRadius: '50%',
-                opacity: 0.35,
-                animation: `pulseFloat ${8 + index * 1.5}s infinite ease-in-out`,
-                animationDelay: `${index * 1}s`,
-              }}
-            />
-          ))}
-
-          {/* Diamonds */}
-          {Array.from({ length: 5 }, (_, index) => (
-            <div
-              key={`diamond-${index}`}
-              style={{
-                position: 'absolute',
-                left: `${30 + (index * 20) % 40}%`,
-                top: `${15 + (index * 40) % 70}%`,
-                width: `${18 + index * 2}px`,
-                height: `${18 + index * 2}px`,
-                border: `2px solid var(--primary)`,
-                opacity: 0.4,
-                transform: 'rotate(45deg)',
-                animation: `diamondFloat ${14 + index * 2}s infinite ease-in-out`,
-                animationDelay: `${index * 3}s`,
-              }}
-            />
+            >
+              {keyword}
+            </div>
           ))}
         </div>
 
-        {/* Enhanced grid patterns */}
+        {/* Binary rain effect */}
         <div
           style={{
             position: 'absolute',
             width: '100%',
             height: '100%',
             background: `
-              linear-gradient(90deg, rgba(55, 154, 97, 0.08) 1px, transparent 1px),
-              linear-gradient(0deg, rgba(55, 154, 97, 0.08) 1px, transparent 1px),
-              linear-gradient(45deg, rgba(55, 154, 97, 0.04) 1px, transparent 1px),
-              linear-gradient(-45deg, rgba(55, 154, 97, 0.04) 1px, transparent 1px)
+              linear-gradient(90deg, transparent 0%, rgba(55, 154, 97, 0.02) 50%, transparent 100%),
+              linear-gradient(0deg, transparent 0%, rgba(55, 154, 97, 0.02) 50%, transparent 100%)
             `,
-            backgroundSize: '50px 50px, 50px 50px, 35px 35px, 35px 35px',
-            animation: 'patternFlow 25s linear infinite',
-            opacity: 0.6,
+            backgroundSize: '100px 100px',
+            animation: 'matrixFlow 20s linear infinite',
+            opacity: 0.3,
           }}
         />
 
@@ -989,68 +868,31 @@ const ParallaxBackground = () => {
       </div>
 
       <style jsx>{`
-        @keyframes rotateFloat {
+        @keyframes float {
           0%, 100% {
             transform: translateY(0px) rotate(0deg);
-            opacity: 0.4;
+            opacity: 0.1;
           }
           25% {
-            transform: translateY(-25px) rotate(90deg);
-            opacity: 0.6;
+            transform: translateY(-30px) rotate(90deg);
+            opacity: 0.2;
           }
           50% {
-            transform: translateY(-40px) rotate(180deg);
-            opacity: 0.5;
+            transform: translateY(-10px) rotate(180deg);
+            opacity: 0.15;
           }
           75% {
-            transform: translateY(-15px) rotate(270deg);
-            opacity: 0.7;
+            transform: translateY(-20px) rotate(270deg);
+            opacity: 0.25;
           }
         }
 
-        @keyframes triangleFloat {
-          0%, 100% {
-            transform: translateY(0px) rotate(0deg) scale(1);
-            opacity: 0.3;
-          }
-          33% {
-            transform: translateY(-30px) rotate(120deg) scale(1.2);
-            opacity: 0.5;
-          }
-          66% {
-            transform: translateY(20px) rotate(240deg) scale(0.8);
-            opacity: 0.4;
-          }
-        }
-
-        @keyframes pulseFloat {
-          0%, 100% {
-            transform: translateY(0px) scale(1);
-            opacity: 0.35;
-          }
-          50% {
-            transform: translateY(-20px) scale(1.3);
-            opacity: 0.6;
-          }
-        }
-
-        @keyframes diamondFloat {
-          0%, 100% {
-            transform: translateY(0px) rotate(45deg) scale(1);
-            opacity: 0.4;
-          }
-          50% {
-            transform: translateY(-35px) rotate(225deg) scale(1.1);
-            opacity: 0.6;
-          }
-        }
-
-        @keyframes patternFlow {
+        @keyframes matrixFlow {
           0% {
-            background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+            background-position: 0% 0%;
           }
           100% {
-            background-position: 50px 50px, 50px 50px, 35px 35px, 35px 35px;
+            background-position: 100% 100%;
           }
         }
 
