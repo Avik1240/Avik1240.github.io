@@ -1,4 +1,4 @@
-.skills {padding: 4rem 0; color: #cfcfcf; }
+.skills {padding: 2rem 0; color: #cfcfcf; }
 .content {margin: 0 auto; padding: 0 2rem; text-align: center; }
 .heading { font-size: 2.5rem; margin-bottom: 3rem; font-weight: 700; text-align: left;}
 .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
@@ -19,7 +19,7 @@
 	.icon { font-size: 2.2rem; width: 2.2rem; height: 2.2rem; }
 }
 @media (max-width:576px) {
-	.skills { padding: 4rem 0; }
+	.skills { padding: 2rem 0; }
 	.content { padding: 0 1.5rem; }
 	.card { width: calc(100% / 2 - 1rem); min-height: 130px; padding: 1rem; }
 	.grid { gap: 1rem; }
