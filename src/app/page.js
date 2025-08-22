@@ -5,12 +5,14 @@ import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ContactSection from "../components/ContactSection";
+// import Cursor from "../components/Cursor";
 import Sidebar from "../components/Sidebar";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      {/* <Cursor /> */}
       <Sidebar />
       <main className={styles.main}>
         <HomeSection />
