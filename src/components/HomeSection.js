@@ -80,7 +80,7 @@ export default function HomeSection() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className={styles.subtitle}
           >
-            Full Stack Developer
+            Frontend Developer & AI Enthusiast
           </motion.div>
 
           <motion.h1
@@ -106,9 +106,7 @@ export default function HomeSection() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className={styles.description}
           >
-            Specialized in building enterprise-grade web applications with
-            modern technologies. Focused on creating scalable, maintainable, and
-            high-performance solutions.
+            Building responsive, scalable web applications with React.js and Next.js. Experienced in delivering 40+ projects with modern UI frameworks and AI-assisted development. Passionate about integrating AI tools to enhance development workflows and user experiences.
           </motion.p>
 
           <motion.div

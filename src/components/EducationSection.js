@@ -11,33 +11,33 @@ import {
 
 const education = [
   {
-    degree: "Master of Science",
-    major: "Computer Science",
-    institution: "Stanford University",
-    location: "Stanford, CA",
-    duration: "2020 - 2022",
+    degree: "Bachelor of Technology",
+    major: "Computer Science & Engineering",
+    institution: "JECRC College",
+    location: "Jaipur, Rajasthan",
+    duration: "2019 - 2023",
     description:
-      "Specialized in Artificial Intelligence and Machine Learning with focus on enterprise applications and cloud computing architectures.",
+      "Comprehensive engineering program focusing on software development, algorithms, and modern web technologies with hands-on project experience and industry exposure.",
     achievements: [
-      "GPA: 3.9/4.0",
-      "Graduate Research Assistant in Cloud Computing Lab",
-      "Published paper on enterprise AI systems at IEEE Conference",
-      "Microsoft Research Fellowship recipient",
+      "CGPA: 9.33/10",
+      "Graduated with distinction",
+      "Man of the Series in Intra-College Cricket Tournament",
+      "Led sports fest coordination with 750+ participants across 25+ events",
     ],
   },
   {
-    degree: "Bachelor of Technology",
-    major: "Computer Science & Engineering",
-    institution: "Indian Institute of Technology",
-    location: "Mumbai, India",
-    duration: "2016 - 2020",
+    degree: "Senior Secondary",
+    major: "Science Stream (CBSE)",
+    institution: "St. Paul's Sr. Sec. School",
+    location: "Ajmer, Rajasthan",
+    duration: "2017 - 2019",
     description:
-      "Comprehensive program covering software engineering, algorithms, data structures, and systems design with industry internships.",
+      "Strong foundation in Mathematics, Physics, and Computer Science with focus on analytical thinking and problem-solving skills.",
     achievements: [
-      "CGPA: 9.2/10",
-      "Graduated with honors",
-      "Microsoft Imagine Cup finalist",
-      "Led university coding team to national championship",
+      "Grade: 90%",
+      "NCC A grade certified Cadet",
+      "Active participation in tech fest promotions",
+      "Engaged 100+ colleges and 2,000+ attendees in national events",
     ],
   },
 ];

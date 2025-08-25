@@ -4,6 +4,7 @@ import SkillsSection from "../components/SkillsSection";
 import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
+import PersonalProjectsSection from "../components/PersonalProjectsSection";
 import ContactSection from "../components/ContactSection";
 // import Cursor from "../components/Cursor";
 import Sidebar from "../components/Sidebar";
@@ -21,6 +22,7 @@ export default function Home() {
         <EducationSection />
         <ExperienceSection />
         <ProjectsSection />
+        <PersonalProjectsSection/>
         <ContactSection />
       </main>
     </div>

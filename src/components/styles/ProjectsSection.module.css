@@ -4,7 +4,7 @@
 
 /* Heading Styles */
 .headingContainer { text-align: center; margin-bottom: 1.5rem; }
-.heading { font-size: 2.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); text-align: left;}
+.heading { font-size: 2.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;  text-align: left;}
 .headingBar { width: 100px; height: 4px; background: var(--gradient); border-radius: 2px; margin: 0 auto; }
 
 /* Swiper Container */

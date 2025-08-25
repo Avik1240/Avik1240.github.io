@@ -13,61 +13,61 @@ import "swiper/css/pagination";
 
 const projects = [
   {
-    name: "Enterprise Cloud Platform",
+    name: "HRMS Enterprise Platform",
     description:
-      "Scalable cloud infrastructure management platform for Fortune 500 companies with real-time monitoring and automated resource allocation.",
-    tech: ["React", "Node.js", "AWS", "Kubernetes"],
-    github: "https://github.com/your-username/cloud-platform",
-    demo: "https://enterprise-cloud.example.com",
-    image: "https://via.placeholder.com/500x300",
-    featured: true,
-  },
-  {
-    name: "Financial Analytics Dashboard",
-    description:
-      "Real-time financial data visualization platform used by investment banks for market analysis and portfolio management.",
-    tech: ["Angular", "D3.js", "Python", "MongoDB"],
-    github: "https://github.com/your-username/finance-analytics",
+      "Comprehensive Human Resource Management System built with Next.js and Tailwind CSS featuring modular component architecture, employee management, and performance analytics.",
+    tech: ["Next.js", "Tailwind CSS", "React Hooks", "Context API"],
+    github: "https://github.com/avik-jain/hrms-platform",
     demo: "",
     image: "https://via.placeholder.com/500x300",
     featured: true,
   },
   {
-    name: "Healthcare Management System",
+    name: "MyGov Maharashtra Portal",
     description:
-      "HIPAA-compliant patient management system with electronic health records, appointment scheduling, and billing integration.",
-    tech: ["React", "Express", "PostgreSQL", "Docker"],
-    github: "https://github.com/your-username/healthcare-system",
+      "Accessible government portal frontend ensuring WCAG compliance with responsive design. Built for citizen services with cross-browser compatibility and mobile-first approach.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
+    github: "https://github.com/avik-jain/mygov-portal",
     demo: "",
-    image: "https://via.placeholder.com/500x300",
-    featured: false,
-  },
-  {
-    name: "E-commerce Platform",
-    description:
-      "Enterprise-grade e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    tech: ["Next.js", "GraphQL", "Stripe", "Redis"],
-    github: "https://github.com/your-username/ecommerce-platform",
-    demo: "https://ecommerce-demo.example.com",
     image: "https://via.placeholder.com/500x300",
     featured: true,
   },
   {
-    name: "Supply Chain Management",
+    name: "BSPHCL Enterprise Dashboard",
     description:
-      "Blockchain-based supply chain tracking system for enterprise logistics with real-time inventory and shipment monitoring.",
-    tech: ["Hyperledger", "React", "Node.js", "AWS"],
-    github: "https://github.com/your-username/supply-chain",
+      "Modern UI dashboard for Bihar State Power Holding Company with optimized performance, clean architecture, and enhanced user experience through performance tuning.",
+    tech: ["React.js", "Tailwind CSS", "Performance Optimization"],
+    github: "https://github.com/avik-jain/bsphcl-dashboard",
+    demo: "",
+    image: "https://via.placeholder.com/500x300",
+    featured: true,
+  },
+  {
+    name: "Bower Wealth Platform",
+    description:
+      "Financial services platform with responsive design and modern UI components. Focus on user experience optimization and scalable component architecture.",
+    tech: ["React.js", "CSS3", "Component Architecture"],
+    github: "https://github.com/avik-jain/bower-wealth",
     demo: "",
     image: "https://via.placeholder.com/500x300",
     featured: false,
   },
   {
-    name: "AI-Powered CRM",
+    name: "Namo Drone Didi Platform",
     description:
-      "Customer relationship management system with machine learning for lead scoring, sentiment analysis, and sales forecasting.",
-    tech: ["Python", "TensorFlow", "React", "FastAPI"],
-    github: "https://github.com/your-username/ai-crm",
+      "Government initiative platform for drone technology empowerment with modern UI design, improved load times, and user-centric interface development.",
+    tech: ["React.js", "Modern UI", "Performance Optimization"],
+    github: "https://github.com/avik-jain/namo-drone-didi",
+    demo: "",
+    image: "https://via.placeholder.com/500x300",
+    featured: true,
+  },
+  {
+    name: "AI-Assisted Development Suite",
+    description:
+      "Personal development toolkit leveraging ChatGPT and Claude for rapid component generation, intelligent debugging, and code optimization. Pioneering AI-integrated workflows.",
+    tech: ["ChatGPT API", "Claude AI", "React.js", "Prompt Engineering"],
+    github: "https://github.com/avik-jain/ai-dev-suite",
     demo: "",
     image: "https://via.placeholder.com/500x300",
     featured: true,

@@ -10,23 +10,36 @@ import {
   FaJsSquare,
   FaGitAlt,
   FaGithub,
+  
 } from "react-icons/fa";
 import { SiNextdotjs, SiMongodb, SiExpress, SiPostman } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiBootstrap,
+  SiJquery,
+  SiPython,
+  SiCplusplus,
+  SiGitlab,
+} from "react-icons/si";
 
 const techStack = [
-  { name: "React", icon: <FaReact /> },
+  { name: "React.js", icon: <FaReact /> },
   { name: "Next.js", icon: <SiNextdotjs /> },
-  { name: "Node.js", icon: <FaNodeJs /> },
-  { name: "Express.js", icon: <SiExpress /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
   { name: "JavaScript", icon: <FaJsSquare /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { name: "Bootstrap 5", icon: <SiBootstrap /> },
   { name: "HTML5", icon: <FaHtml5 /> },
   { name: "CSS3", icon: <FaCss3Alt /> },
+  { name: "jQuery", icon: <SiJquery /> },
+  { name: "Python", icon: <SiPython /> },
+  { name: "C++", icon: <SiCplusplus /> },
   { name: "Git", icon: <FaGitAlt /> },
   { name: "GitHub", icon: <FaGithub /> },
-  { name: "Postman", icon: <SiPostman /> },
+  { name: "GitLab", icon: <SiGitlab /> },
+  { name: "VS Code", icon: <FaJsSquare /> },
+  { name: "ChatGPT", icon: <FaReact /> },
+  { name: "AI Tools", icon: <FaCss3Alt /> },
 ];
-
 export default function TechStackSection() {
   return (
     <section id="skills" className={styles.skills}>

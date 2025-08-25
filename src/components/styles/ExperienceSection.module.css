@@ -2,7 +2,7 @@
 .container {margin: 0 auto; padding: 0 2rem; }
 .content { width: 100%; }
 .headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem; position: relative; }
-.heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); text-align: left; position: relative; width: 100%;}
+.heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;  text-align: left; position: relative; width: 100%;}
 .headingBar { width: 80px; height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); border-radius: 2px; }
 .experienceCards { display: flex;margin: 0 auto; flex-wrap: wrap;justify-content: space-between;}
 .card { position: relative; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.05); width: calc((100% / 2) - 16px);margin-bottom: 2rem;}

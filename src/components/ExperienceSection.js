@@ -11,45 +11,31 @@ import {
 
 const experiences = [
   {
-    role: "Senior Software Architect",
-    company: "Microsoft",
-    location: "Redmond, WA",
-    duration: "2021 - Present",
+    role: "Software Developer - Web",
+    company: "Silver Touch Technologies Ltd",
+    location: "Ahmedabad, Gujarat",
+    duration: "Jan 2024 - Present",
     description:
-      "Leading architecture design for enterprise cloud solutions using Azure, .NET Core, and React. Managing a team of 12 developers across multiple projects and implementing CI/CD pipelines for seamless deployment.",
+      "Developing enterprise-grade web applications using React.js, Next.js, and modern UI frameworks. Specializing in HRMS platforms, government portals, and AI-assisted development workflows for enhanced productivity and code quality.",
     achievements: [
-      "Reduced system latency by 40% through microservices architecture redesign",
-      "Implemented secure authentication system for enterprise clients",
-      "Led migration of legacy systems to cloud infrastructure",
-      "Mentored junior developers and conducted technical workshops",
+      "Built comprehensive HRMS product using Next.js and Tailwind CSS with modular architecture",
+      "Developed accessible frontends for MyGov Maharashtra Portal ensuring WCAG compliance",
+      "Delivered modern UIs for BSPHCL, Bower Wealth, and Namo Drone Didi platforms",
+      "Leveraged ChatGPT and AI tools to accelerate component development and debugging processes",
     ],
   },
   {
-    role: "Lead Full Stack Developer",
-    company: "Amazon Web Services",
-    location: "Seattle, WA",
-    duration: "2018 - 2021",
+    role: "Research & Development Intern",
+    company: "Nestlé",
+    location: "Gurgaon, Haryana",
+    duration: "Dec 2021 - Jan 2022",
     description:
-      "Developed scalable web applications using Node.js, React, and AWS services. Collaborated with product managers and designers to deliver high-quality user experiences for enterprise clients.",
+      "Collaborated on innovative automation solutions for coffee packaging operations. Researched and designed cost-effective end-of-line packaging systems for Stabilo line in coffee F&P division, focusing on efficiency optimization.",
     achievements: [
-      "Built real-time analytics dashboard used by 500+ enterprise customers",
-      "Optimized database queries resulting in 60% performance improvement",
-      "Implemented automated testing framework reducing bugs by 35%",
-      "Received AWS Innovation Award for developer tools contribution",
-    ],
-  },
-  {
-    role: "Frontend Engineer",
-    company: "Google",
-    location: "Mountain View, CA",
-    duration: "2016 - 2018",
-    description:
-      "Worked on Google Cloud Platform interfaces using Angular and Material Design. Focused on creating responsive, accessible, and performant user interfaces for enterprise customers.",
-    achievements: [
-      "Developed component library used across multiple Google Cloud products",
-      "Improved accessibility compliance to WCAG 2.1 AA standards",
-      "Reduced bundle size by 30% through code splitting and lazy loading",
-      "Contributed to open-source Material Design components",
+      "Identified automated filling and packaging solution reducing manual intervention",
+      "Contributed to significant time savings per week through process optimization",
+      "Researched low-cost automation technologies for industrial applications",
+      "Collaborated with cross-functional teams on packaging innovation projects",
     ],
   },
 ];

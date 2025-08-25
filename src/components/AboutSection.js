@@ -8,27 +8,27 @@ export default function AboutSection() {
   const specializations = [
     {
       icon: <FaCode />,
-      title: "Frontend Development",
+      title: "React & Next.js Expert",
       description:
-        "Building responsive, accessible, and performant user interfaces with React and Next.js",
+        "Crafting lightning-fast, responsive web applications with component-driven architecture and modern React patterns",
     },
     {
       icon: <FaServer />,
-      title: "Backend Engineering",
+      title: "AI-Powered Development",
       description:
-        "Developing robust APIs and services with Node.js, Express, and cloud technologies",
+        "Pioneering AI-assisted coding workflows using ChatGPT and Claude for rapid prototyping and intelligent debugging",
     },
     {
       icon: <FaDatabase />,
-      title: "Database Design",
+      title: "UI/UX Excellence",
       description:
-        "Creating efficient data models and implementing solutions with SQL and NoSQL databases",
+        "Delivering pixel-perfect, accessible interfaces with Tailwind CSS, focusing on performance and user experience",
     },
     {
       icon: <FaLaptopCode />,
       title: "Enterprise Solutions",
       description:
-        "Delivering scalable applications with focus on security, performance, and maintainability",
+        "Building scalable HRMS platforms and government portals with emphasis on security, WCAG compliance, and maintainability",
     },
   ];
 
@@ -56,33 +56,37 @@ export default function AboutSection() {
             >
               <h3 className={styles.bioHeading}>Professional Background</h3>
               <p className={styles.text}>
-                I'm a full-stack developer with over 10 years of experience
-                specializing in enterprise-grade web applications. My expertise
-                spans the entire development lifecycle, from architecture and
-                design to implementation and deployment.
+                I'm a passionate Frontend Developer with 1.5+ years of hands-on
+                experience crafting exceptional web experiences using React.js
+                and Next.js. My journey spans across 40+ diverse projects, where
+                I've mastered the art of building responsive, scalable
+                applications with modern UI frameworks like Tailwind CSS and
+                Bootstrap 5.
               </p>
               <p className={styles.text}>
-                I've collaborated with cross-functional teams at leading
-                technology companies to deliver scalable, maintainable solutions
-                that solve complex business problems. My approach combines
-                technical excellence with a deep understanding of business
-                requirements.
+                What sets me apart is my innovative approach to development
+                through AI integration. I leverage prompt engineering and
+                generative AI tools like ChatGPT and Claude to accelerate
+                development cycles, enhance code quality, and pioneer
+                cutting-edge solutions. Currently transitioning into GenAI, I'm
+                at the forefront of revolutionizing how we build tomorrow's web
+                applications.
               </p>
               <div className={styles.keyPoints}>
                 <div className={styles.keyPoint}>
-                  <span className={styles.keyPointNumber}>10+</span>
-                  <span className={styles.keyPointLabel}>Years Experience</span>
-                </div>
-                <div className={styles.keyPoint}>
-                  <span className={styles.keyPointNumber}>50+</span>
+                  <span className={styles.keyPointNumber}>40+</span>
                   <span className={styles.keyPointLabel}>
-                    Projects Completed
+                    Projects Delivered
                   </span>
                 </div>
                 <div className={styles.keyPoint}>
-                  <span className={styles.keyPointNumber}>15+</span>
+                  <span className={styles.keyPointNumber}>1.5+</span>
+                  <span className={styles.keyPointLabel}>Years Experience</span>
+                </div>
+                <div className={styles.keyPoint}>
+                  <span className={styles.keyPointNumber}>5+</span>
                   <span className={styles.keyPointLabel}>
-                    Enterprise Clients
+                    Enterprise Solutions
                   </span>
                 </div>
               </div>

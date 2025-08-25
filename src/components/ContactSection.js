@@ -18,8 +18,10 @@ export default function ContactSection() {
         <h2 className={styles.heading}>Contact Me</h2>
         <div className={styles.details}>
           <p>
-            If you would like to get in touch, feel free to drop me a message or
-            connect with me on my socials!
+            Ready to collaborate on your next project? Let's discuss how my
+            expertise in React.js, Next.js, and AI-assisted development can
+            bring your ideas to life. I'm always excited to work on innovative
+            web solutions!
           </p>
           <div className={styles.socials}>
             <a
