@@ -2,86 +2,80 @@
 
 import styles from "./styles/PersonalProjectsSection.module.css";
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaRobot, FaCode, FaDatabase, FaMobile } from "react-icons/fa";
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaRobot,
+  FaCode,
+  FaDatabase,
+  FaMobile,
+} from "react-icons/fa";
 import { useState } from "react";
 
 const personalProjects = [
   {
-    name: "AI-Enhanced E-commerce Platform",
+    name: "Info Den",
     description:
-      "Full-stack e-commerce application built with AI-assisted development workflows. Leveraged ChatGPT for rapid component generation and Claude for architecture optimization.",
+      "Full-stack information sharing platform built with Node.js and Next.js, featuring MongoDB database integration for seamless content management and user interactions.",
     longDescription:
-      "A comprehensive e-commerce platform featuring user authentication, product catalog, shopping cart, payment integration, and admin dashboard. Built entirely using AI-assisted development methodologies for accelerated coding and intelligent debugging processes.",
-    tech: ["React.js", "Node.js", "MongoDB", "Stripe API", "ChatGPT Integration"],
-    github: "https://github.com/avik-jain/ai-ecommerce",
-    demo: "https://ai-ecommerce-demo.vercel.app",
-    category: "Full Stack",
-    aiEnhanced: true,
-    featured: true,
-  },
-  {
-    name: "Smart Task Management App",
-    description:
-      "Personal productivity application with AI-powered task prioritization and intelligent scheduling suggestions built using prompt engineering techniques.",
-    longDescription:
-      "A modern task management solution that uses AI algorithms to suggest optimal task scheduling, priority levels, and deadline management. Developed with extensive AI assistance for component architecture and state management.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "AI Integration"],
-    github: "https://github.com/avik-jain/smart-tasks",
-    demo: "https://smart-tasks-demo.vercel.app",
-    category: "Frontend",
-    aiEnhanced: true,
-    featured: true,
-  },
-  {
-    name: "Social Media Dashboard",
-    description:
-      "Analytics dashboard for social media management with real-time data visualization. Built using AI-assisted coding for rapid development and optimization.",
-    longDescription:
-      "Comprehensive social media analytics platform featuring real-time data visualization, engagement metrics, and content performance tracking. Utilized AI tools for efficient component development and debugging workflows.",
-    tech: ["React.js", "D3.js", "Express.js", "PostgreSQL"],
-    github: "https://github.com/avik-jain/social-dashboard",
-    demo: "",
-    category: "Full Stack",
-    aiEnhanced: true,
-    featured: false,
-  },
-  {
-    name: "Weather Prediction App",
-    description:
-      "Mobile-responsive weather application with advanced forecasting features. Developed using AI-enhanced development practices for faster iteration.",
-    longDescription:
-      "Modern weather application featuring location-based forecasting, interactive maps, and weather alerts. Built with mobile-first approach using AI-assisted development for component optimization and responsive design implementation.",
-    tech: ["React.js", "Weather API", "Tailwind CSS", "PWA"],
-    github: "https://github.com/avik-jain/weather-app",
-    demo: "https://weather-app-demo.vercel.app",
-    category: "Frontend",
-    aiEnhanced: true,
-    featured: false,
-  },
-  {
-    name: "Portfolio CMS",
-    description:
-      "Content management system for portfolio websites with drag-and-drop functionality. Created with AI guidance for architecture and component design.",
-    longDescription:
-      "A flexible CMS solution specifically designed for portfolio websites featuring drag-and-drop page builder, content management, and SEO optimization. Developed using AI-assisted workflows for rapid prototyping and feature implementation.",
-    tech: ["Next.js", "Tailwind CSS", "Supabase", "Drag & Drop"],
-    github: "https://github.com/avik-jain/portfolio-cms",
+      "A comprehensive information sharing platform that allows users to create, share, and discover content across various categories. Built with modern full-stack architecture using Node.js backend, Next.js frontend, and MongoDB for data persistence. The platform features user authentication, content creation tools, search functionality, and responsive design. Currently developing a full version with .NET backend to enhance scalability and performance.",
+    tech: ["Next.js", "Node.js", "MongoDB", "JavaScript", "CSS"],
+    github: "https://github.com/Avik1240/Mini-Info-Den",
     demo: "",
     category: "Full Stack",
     aiEnhanced: true,
     featured: true,
   },
   {
-    name: "Code Snippet Manager",
+    name: "NewsWala",
     description:
-      "Developer tool for organizing and sharing code snippets with syntax highlighting. Built using AI-enhanced development methodologies.",
+      "Dynamic news application built with React that delivers current events through NewsAPI integration, featuring responsive design and interactive user interface.",
     longDescription:
-      "Comprehensive code snippet management platform with syntax highlighting, categorization, and sharing capabilities. Developed with AI assistance for efficient development cycles and intelligent code organization features.",
-    tech: ["React.js", "Firebase", "Monaco Editor", "Material UI"],
-    github: "https://github.com/avik-jain/snippet-manager",
-    demo: "https://snippet-manager-demo.vercel.app",
+      "A modern news application that provides users with up-to-date news from various sources through NewsAPI integration. Features include category-wise news filtering, search functionality, article previews, and mobile-responsive design. Built with React for optimal performance and user experience, incorporating modern JavaScript practices and CSS styling for an engaging news consumption platform.",
+    tech: ["React.js", "NewsAPI", "JavaScript", "CSS", "HTML"],
+    github: "https://github.com/Avik1240/NewsWala",
+    demo: "",
     category: "Frontend",
     aiEnhanced: true,
+    featured: false,
+  },
+  {
+    name: "TextUtils",
+    description:
+      "Versatile text utility application developed with React, offering comprehensive text manipulation tools including case conversion, text analysis, and formatting options.",
+    longDescription:
+      "A comprehensive text utility platform that provides users with various text manipulation and analysis tools. Features include uppercase/lowercase conversion, text copying, word counting, character analysis, text formatting, and search functionality. Built with React for smooth interactivity and responsive design, making it accessible across all devices for enhanced productivity and text processing needs.",
+    tech: ["React.js", "JavaScript", "CSS", "HTML"],
+    github: "https://github.com/Avik1240/TextUtils",
+    demo: "",
+    category: "Frontend",
+    aiEnhanced: false,
+    featured: false,
+  },
+  {
+    name: "E-Commerce",
+    description:
+      "Fully responsive e-commerce website frontend featuring interactive product showcase, modern design elements, and seamless user experience built with HTML, CSS, JavaScript, and Bootstrap.",
+    longDescription:
+      "A complete e-commerce website frontend showcasing modern web development practices with responsive design and interactive features. The platform includes product catalogs, shopping interface, user-friendly navigation, and mobile optimization. Built using HTML for structure, CSS for styling, JavaScript for interactivity, and Bootstrap framework for responsive grid system and component library, ensuring compatibility across all devices and browsers.",
+    tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    github: "https://github.com/Avik1240/E-Commerce",
+    demo: "",
+    category: "Frontend",
+    aiEnhanced: true,
+    featured: false,
+  },
+  {
+    name: "Flip Book",
+    description:
+      "Interactive PDF flip book application that transforms static documents into engaging digital experiences with realistic page-turning animations and comprehensive viewing tools.",
+    longDescription:
+      "An innovative PDF visualization platform that converts traditional PDF documents into interactive flip books with realistic page-turning animations. Features include zoom functionality, full-screen viewing, navigation controls, bookmark support, and mobile-responsive design. Built with JavaScript for smooth animations and interactive features, providing users with an immersive reading experience that bridges the gap between digital and physical books.",
+    tech: ["JavaScript", "HTML", "CSS", "PDF.js"],
+    github: "https://github.com/Avik1240/Flip--Book",
+    demo: "",
+    category: "Frontend",
+    aiEnhanced: false,
     featured: false,
   },
 ];
@@ -93,15 +87,19 @@ export default function PersonalProjectsSection() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const filteredProjects = personalProjects.filter(
-    project => activeCategory === "All" || project.category === activeCategory
+    (project) => activeCategory === "All" || project.category === activeCategory
   );
 
   const getCategoryIcon = (category) => {
     switch (category) {
-      case "Full Stack": return <FaDatabase />;
-      case "Frontend": return <FaCode />;
-      case "Mobile": return <FaMobile />;
-      default: return <FaCode />;
+      case "Full Stack":
+        return <FaDatabase />;
+      case "Frontend":
+        return <FaCode />;
+      case "Mobile":
+        return <FaMobile />;
+      default:
+        return <FaCode />;
     }
   };
 
@@ -119,6 +117,10 @@ export default function PersonalProjectsSection() {
           <p className={styles.subheading}>
             Exploring cutting-edge development with AI-assisted workflows
           </p>
+          {/* <h2 className={styles.heading}>Personal Projects</h2> 
+          <p className={styles.subheading}>
+            Showcasing full-stack and frontend development expertise
+          </p>*/}
         </motion.div>
 
         {/* Category Filter */}
@@ -180,7 +182,9 @@ export default function PersonalProjectsSection() {
                   )}
                 </div>
                 <h3 className={styles.projectTitle}>{project.name}</h3>
-                <p className={styles.projectDescription}>{project.description}</p>
+                <p className={styles.projectDescription}>
+                  {project.description}
+                </p>
               </div>
 
               <div className={styles.cardBody}>
@@ -219,9 +223,7 @@ export default function PersonalProjectsSection() {
                       </a>
                     )}
                   </div>
-                  <button className={styles.viewMoreBtn}>
-                    View Details →
-                  </button>
+                  <button className={styles.viewMoreBtn}>View Details →</button>
                 </div>
               </div>
             </motion.div>

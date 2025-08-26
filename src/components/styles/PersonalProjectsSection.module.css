@@ -1,10 +1,10 @@
 /* Personal Projects Section */
 .personalProjects { padding: 4rem 0; width: 100%; }
-.container { margin: 0 auto; padding: 0 2rem;}
+.container { margin: 0 auto; padding: 0 2rem; }
 
 /* Heading Styles */
 .headingContainer { text-align: center; margin-bottom: 3rem; }
-.heading {text-align: left; font-size: 3rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.heading { text-align: left; font-size: 3rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .subheading { font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.6; }
 
 /* Category Filter */
@@ -14,10 +14,13 @@
 .categoryBtn.active { background: var(--primary); color: white; border-color: var(--primary); box-shadow: 0 4px 16px rgba(55, 154, 97, 0.3); }
 
 /* Projects Grid */
-.projectsGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+.projectsGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 2rem; justify-content: center;}
+.projectsGrid:has(.projectCard:only-child) .projectCard { max-width: 400px; margin: 0 auto; }
+.projectsGrid.singleCard { justify-content: center; }
+.projectsGrid.singleCard .projectCard { max-width: 400px; }
 
 /* Project Card */
-.projectCard { background: var(--card); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(55, 154, 97, 0.1); transition: all 0.4s ease; cursor: pointer; position: relative; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+.projectCard { background: var(--card); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(55, 154, 97, 0.1); transition: all 0.4s ease; cursor: pointer; position: relative; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); display: flex;flex-direction: column;}
 .projectCard::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 2px; background: var(--gradient); transition: left 0.4s ease; }
 .projectCard:hover::before { left: 0; }
 .projectCard:hover { transform: translateY(-8px); border-color: rgba(55, 154, 97, 0.3); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); }
@@ -33,7 +36,7 @@
 .projectDescription { color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem; }
 
 /* Card Body */
-.cardBody { display: flex; flex-direction: column; gap: 1.5rem; }
+.cardBody { display: flex; flex-direction: column; gap: 1.5rem; margin-top: auto;}
 .techStack { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .techTag { background: rgba(55, 154, 97, 0.08); color: var(--text-primary); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; font-weight: 500; border: 1px solid rgba(55, 154, 97, 0.1); transition: all 0.2s ease; }
 .techTag:hover { background: rgba(55, 154, 97, 0.15); transform: translateY(-1px); }
@@ -42,14 +45,14 @@
 .cardActions { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
 .projectLinks { display: flex; gap: 0.75rem; }
 .actionBtn { display: flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; background: rgba(55, 154, 97, 0.1); color: var(--primary); border-radius: 8px; font-size: 0.85rem; font-weight: 500; transition: all 0.3s ease; text-decoration: none; }
-.actionBtn:hover { background: var(--primary); color: white; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(55, 154, 97, 0.3); }
+.actionBtn:hover { background: var(--primary); color: #000; transform: translateY(-2px); }
 .viewMoreBtn { background: none; color: var(--primary); border: none; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; padding: 0.5rem 0; }
 .viewMoreBtn:hover { color: var(--text-primary); transform: translateX(5px); }
 
 /* Modal */
 .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 2rem; backdrop-filter: blur(5px); }
 .modalContent { background: var(--card); border-radius: 20px; padding: 2rem; max-width: 600px; width: 100%; max-height: 80vh; overflow-y: auto; position: relative; border: 2px solid rgba(55, 154, 97, 0.1); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); }
-.closeBtn { position: absolute; top: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.1); border: none; color: var(--text-primary); font-size: 1.5rem; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; transition: all 0.3s ease; }
+.closeBtn { position: absolute; top: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.1); border: none; color: var(--text-primary); font-size: 1.5rem; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; transition: all 0.3s ease; padding: 0;display: flex;align-items: center;justify-content: center;}
 .closeBtn:hover { background: rgba(255, 0, 0, 0.1); color: #ff4757; }
 .modalHeader { margin-bottom: 1.5rem; padding-right: 3rem; }
 .modalHeader h3 { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); }
@@ -60,14 +63,14 @@
 /* Responsive Design */
 @media (max-width:1024px) {
 	.heading { font-size: 2.5rem; }
-	.projectsGrid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+	.projectsGrid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; max-width: 900px; }
 }
 @media (max-width:768px) {
 	.personalProjects { padding: 3rem 0; }
 	.container { padding: 0 1rem; }
 	.heading { font-size: 2.2rem; }
 	.subheading { font-size: 1rem; }
-	.projectsGrid { grid-template-columns: 1fr; }
+	.projectsGrid { grid-template-columns: 1fr; max-width: 500px; }
 	.categoryFilter { gap: 0.5rem; }
 	.categoryBtn { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
 	.projectCard { padding: 1.25rem; }
@@ -77,6 +80,7 @@
 	.modalHeader h3 { font-size: 1.5rem; }
 }
 @media (max-width:480px) {
+	.projectsGrid { max-width: 100%; }
 	.projectMeta { flex-direction: column; align-items: flex-start; }
 	.projectLinks { flex-direction: column; gap: 0.5rem; }
 	.actionBtn { padding: 0.6rem 1.2rem; }
