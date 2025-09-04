@@ -8,9 +8,9 @@
 .headingBar { width: 100px; height: 4px; background: var(--gradient); border-radius: 2px; margin: 0 auto; }
 
 /* Swiper Container */
-.swiperContainer { position: relative; width: 100%; }
-.swiper { width: 100%; padding: 2rem 44px; position: relative;}
-.swiperSlide { height: auto; }
+.swiperContainer { position: relative !important; width: 100% !important; }
+.swiper { width: 100% !important; padding: 2rem 44px !important; position: relative !important;}
+.swiperSlide { height: auto !important; }
 
 /* Swiper Navigation */
 .swiper-button-prev, .swiper-button-next { color: var(--primary) !important; background: var(--card) !important; width: 40px !important; height: 40px !important; border-radius: 50% !important; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important; transition: all 0.3s ease !important; position: absolute !important; top: 50% !important;transform: translateY(-50%) !important; z-index: 11 !important;}
@@ -44,7 +44,7 @@
 .overlayTitle { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
 .overlayLinks { display: flex; gap: 1rem; justify-content: center; }
 .overlayLink { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; color: white; transition: all 0.3s ease; backdrop-filter: blur(10px); }
-.overlayLink:hover { background: var(--primary); transform: scale(1.1); }
+.overlayLink:hover { background: var(--primary); transform: scale(1.1); color: #fff;}
 
 /* Project Info */
 .projectInfo { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }

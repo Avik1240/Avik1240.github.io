@@ -132,7 +132,7 @@ export default function HomeSection() {
             transition={{ delay: 1, duration: 0.8 }}
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Avik1240"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -140,7 +140,7 @@ export default function HomeSection() {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/avikjain1240"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"

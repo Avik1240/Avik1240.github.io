@@ -25,7 +25,7 @@ export default function ContactSection() {
           </p>
           <div className={styles.socials}>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:your.jainavik2000@example.com"
               target="_blank"
               rel="noopener noreferrer"
               title="Email"
@@ -37,7 +37,7 @@ export default function ContactSection() {
               Email
             </a>
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/Avik1240"
               target="_blank"
               rel="noopener noreferrer"
               title="Github"
@@ -49,7 +49,7 @@ export default function ContactSection() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/your-username"
+              href="https://www.linkedin.com/in/avikjain1240"
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
@@ -60,7 +60,7 @@ export default function ContactSection() {
               </span>
               LinkedIn
             </a>
-            <a
+            {/* <a
               href="https://www.twitter.com/in/your-username"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function ContactSection() {
                 <FaXTwitter />
               </span>
               X
-            </a>
+            </a> */}
           </div>
         </div>
       </motion.div>

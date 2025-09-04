@@ -17,8 +17,8 @@ const projects = [
     description:
       "Comprehensive Human Resource Management System built with Next.js and Tailwind CSS featuring modular component architecture, employee management, and performance analytics.",
     tech: ["Next.js", "Tailwind CSS", "React Hooks", "Context API"],
-    github: "https://github.com/avik-jain/hrms-platform",
-    demo: "",
+    // github: "https://github.com/avik-jain/hrms-platform",
+    demo: "https://github.com/avik-jain/namo-drone-didi",
     image: "https://via.placeholder.com/500x300",
     featured: true,
   },
@@ -27,8 +27,8 @@ const projects = [
     description:
       "Accessible government portal frontend ensuring WCAG compliance with responsive design. Built for citizen services with cross-browser compatibility and mobile-first approach.",
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
-    github: "https://github.com/avik-jain/mygov-portal",
-    demo: "",
+    // github: "https://github.com/avik-jain/mygov-portal",
+    demo: "https://mygovmaharashtra.mahaonline.gov.in/",
     image: "https://via.placeholder.com/500x300",
     featured: true,
   },
@@ -37,18 +37,28 @@ const projects = [
     description:
       "Modern UI dashboard for Bihar State Power Holding Company with optimized performance, clean architecture, and enhanced user experience through performance tuning.",
     tech: ["React.js", "Tailwind CSS", "Performance Optimization"],
-    github: "https://github.com/avik-jain/bsphcl-dashboard",
-    demo: "",
+    // github: "https://github.com/avik-jain/bsphcl-dashboard",
+    demo: "http://hrmspension.bsphcl.co.in:9010/",
     image: "https://via.placeholder.com/500x300",
     featured: true,
+  },
+  {
+    name: "Bower Private Clients",
+    description:
+      "Financial services platform with responsive design and modern UI components. Focus on user experience optimization and scalable component architecture.",
+    tech: ["React.js", "CSS3", "Component Architecture"],
+    // github: "https://github.com/avik-jain/bower-wealth",
+    demo: "https://www.bowerhomefinance.co.uk/private-clients/",
+    image: "https://via.placeholder.com/500x300",
+    featured: false,
   },
   {
     name: "Bower Wealth Platform",
     description:
       "Financial services platform with responsive design and modern UI components. Focus on user experience optimization and scalable component architecture.",
     tech: ["React.js", "CSS3", "Component Architecture"],
-    github: "https://github.com/avik-jain/bower-wealth",
-    demo: "",
+    // github: "https://github.com/avik-jain/bower-wealth",
+    demo: "https://www.bowerwealth.co.uk/",
     image: "https://via.placeholder.com/500x300",
     featured: false,
   },
@@ -57,8 +67,8 @@ const projects = [
     description:
       "Government initiative platform for drone technology empowerment with modern UI design, improved load times, and user-centric interface development.",
     tech: ["React.js", "Modern UI", "Performance Optimization"],
-    github: "https://github.com/avik-jain/namo-drone-didi",
-    demo: "",
+    // github: "https://github.com/avik-jain/namo-drone-didi",
+    demo: "https://namodronedidi.da.gov.in/",
     image: "https://via.placeholder.com/500x300",
     featured: true,
   },
@@ -67,8 +77,8 @@ const projects = [
     description:
       "Personal development toolkit leveraging ChatGPT and Claude for rapid component generation, intelligent debugging, and code optimization. Pioneering AI-integrated workflows.",
     tech: ["ChatGPT API", "Claude AI", "React.js", "Prompt Engineering"],
-    github: "https://github.com/avik-jain/ai-dev-suite",
-    demo: "",
+    // github: "https://github.com/avik-jain/ai-dev-suite",
+    demo: "https://github.com/avik-jain/namo-drone-didi",
     image: "https://via.placeholder.com/500x300",
     featured: true,
   },
@@ -150,7 +160,7 @@ export default function ProjectsSection() {
                       <div className={styles.overlayContent}>
                         <h3 className={styles.overlayTitle}>{project.name}</h3>
                         <div className={styles.overlayLinks}>
-                          {project.github && (
+                          {/* {project.github && (
                             <a
                               href={project.github}
                               target="_blank"
@@ -160,7 +170,7 @@ export default function ProjectsSection() {
                             >
                               <FaGithub />
                             </a>
-                          )}
+                          )} */}
                           {project.demo && (
                             <a
                               href={project.demo}
@@ -188,7 +198,7 @@ export default function ProjectsSection() {
                         </span>
                       ))}
                     </div>
-                    <div className={styles.projectLinks}>
+                    {/* <div className={styles.projectLinks}>
                       {project.github && (
                         <a
                           href={project.github}
@@ -211,7 +221,7 @@ export default function ProjectsSection() {
                           <FaExternalLinkAlt /> Demo
                         </a>
                       )}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </SwiperSlide>
