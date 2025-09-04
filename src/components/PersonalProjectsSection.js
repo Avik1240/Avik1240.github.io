@@ -19,7 +19,7 @@ const personalProjects = [
       "Full-stack information sharing platform built with Node.js and Next.js, featuring MongoDB database integration for seamless content management and user interactions.",
     longDescription:
       "A comprehensive information sharing platform that allows users to create, share, and discover content across various categories. Built with modern full-stack architecture using Node.js backend, Next.js frontend, and MongoDB for data persistence. The platform features user authentication, content creation tools, search functionality, and responsive design. Currently developing a full version with .NET backend to enhance scalability and performance.",
-    tech: ["Next.js", "Node.js", "MongoDB", "JavaScript", "CSS"],
+    tech: ["Next.js", "Node.js", "MongoDB", "JavaScript","HTML", "CSS"],
     github: "https://github.com/Avik1240/Mini-Info-Den",
     demo: "",
     category: "Full Stack",
@@ -114,9 +114,9 @@ export default function PersonalProjectsSection() {
           className={styles.headingContainer}
         >
           <h2 className={styles.heading}>Personal Projects & AI Innovations</h2>
-          <p className={styles.subheading}>
+          {/* <p className={styles.subheading}>
             Exploring cutting-edge development with AI-assisted workflows
-          </p>
+          </p> */}
           {/* <h2 className={styles.heading}>Personal Projects</h2> 
           <p className={styles.subheading}>
             Showcasing full-stack and frontend development expertise

@@ -25,7 +25,7 @@ export default function ContactSection() {
           </p>
           <div className={styles.socials}>
             <a
-              href="mailto:your.jainavik2000@example.com"
+              href="mailto:your.jainavik2000@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               title="Email"

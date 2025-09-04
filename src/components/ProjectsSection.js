@@ -16,11 +16,12 @@ const projects = [
     name: "HRMS Enterprise Platform",
     description:
       "Comprehensive Human Resource Management System built with Next.js and Tailwind CSS featuring modular component architecture, employee management, and performance analytics.",
-    tech: ["Next.js", "Tailwind CSS", "React Hooks", "Context API"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Next.js", "Tailwind CSS", "React Hooks", "Context API"],
     // github: "https://github.com/avik-jain/hrms-platform",
-    demo: "https://github.com/avik-jain/namo-drone-didi",
-    image: "https://via.placeholder.com/500x300",
+    demo: false,
+    image: "../../assets/images/no-preview.png",
     featured: true,
+    underDev: true,
   },
   {
     name: "MyGov Maharashtra Portal",
@@ -29,59 +30,59 @@ const projects = [
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
     // github: "https://github.com/avik-jain/mygov-portal",
     demo: "https://mygovmaharashtra.mahaonline.gov.in/",
-    image: "https://via.placeholder.com/500x300",
+    image: "../../assets/images/mygov-mah-preview.png",
     featured: true,
   },
   {
     name: "BSPHCL Enterprise Dashboard",
     description:
       "Modern UI dashboard for Bihar State Power Holding Company with optimized performance, clean architecture, and enhanced user experience through performance tuning.",
-    tech: ["React.js", "Tailwind CSS", "Performance Optimization"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery", "Performance Optimization"],
     // github: "https://github.com/avik-jain/bsphcl-dashboard",
     demo: "http://hrmspension.bsphcl.co.in:9010/",
-    image: "https://via.placeholder.com/500x300",
+    image: "../../assets/images/bsphcl-preview.png",
     featured: true,
   },
   {
     name: "Bower Private Clients",
     description:
       "Financial services platform with responsive design and modern UI components. Focus on user experience optimization and scalable component architecture.",
-    tech: ["React.js", "CSS3", "Component Architecture"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery","Wordpress"],
     // github: "https://github.com/avik-jain/bower-wealth",
     demo: "https://www.bowerhomefinance.co.uk/private-clients/",
-    image: "https://via.placeholder.com/500x300",
-    featured: false,
+    image: "../../assets/images/bower-private-preview.png",
+    featured: true,
   },
   {
     name: "Bower Wealth Platform",
     description:
       "Financial services platform with responsive design and modern UI components. Focus on user experience optimization and scalable component architecture.",
-    tech: ["React.js", "CSS3", "Component Architecture"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery","Wordpress"],
     // github: "https://github.com/avik-jain/bower-wealth",
     demo: "https://www.bowerwealth.co.uk/",
-    image: "https://via.placeholder.com/500x300",
-    featured: false,
+    image: "../../assets/images/bower-wealth-preview.png",
+    featured: true,
   },
   {
     name: "Namo Drone Didi Platform",
     description:
       "Government initiative platform for drone technology empowerment with modern UI design, improved load times, and user-centric interface development.",
-    tech: ["React.js", "Modern UI", "Performance Optimization"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
     // github: "https://github.com/avik-jain/namo-drone-didi",
     demo: "https://namodronedidi.da.gov.in/",
-    image: "https://via.placeholder.com/500x300",
-    featured: true,
+    image: "../../assets/images/ndd-preview.png",
+    featured: false,
   },
-  {
-    name: "AI-Assisted Development Suite",
-    description:
-      "Personal development toolkit leveraging ChatGPT and Claude for rapid component generation, intelligent debugging, and code optimization. Pioneering AI-integrated workflows.",
-    tech: ["ChatGPT API", "Claude AI", "React.js", "Prompt Engineering"],
-    // github: "https://github.com/avik-jain/ai-dev-suite",
-    demo: "https://github.com/avik-jain/namo-drone-didi",
-    image: "https://via.placeholder.com/500x300",
-    featured: true,
-  },
+  // {
+  //   name: "AI-Assisted Development Suite",
+  //   description:
+  //     "Personal development toolkit leveraging ChatGPT and Claude for rapid component generation, intelligent debugging, and code optimization. Pioneering AI-integrated workflows.",
+  //   tech: ["ChatGPT API", "Claude AI", "React.js", "Prompt Engineering"],
+  //   // github: "https://github.com/avik-jain/ai-dev-suite",
+  //   demo: "https://github.com/avik-jain/namo-drone-didi",
+  //   image: "https://via.placeholder.com/500x300",
+  //   featured: true,
+  // },
 ];
 
 export default function ProjectsSection() {
@@ -118,11 +119,11 @@ export default function ProjectsSection() {
               clickable: true,
               dynamicBullets: true,
             }}
-            // autoplay={{
-            //   delay: 4000,
-            //   disableOnInteraction: false,
-            //   pauseOnMouseEnter: true,
-            // }}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
             loop={true}
             className={styles.swiper}
             breakpoints={{
@@ -156,9 +157,12 @@ export default function ProjectsSection() {
                     {project.featured && (
                       <div className={styles.featuredBadge}>Featured</div>
                     )}
+                    {project.underDev && (
+                      <div className={styles.underDevBadge}>Under Development</div>
+                    )}
                     <div className={styles.overlay}>
                       <div className={styles.overlayContent}>
-                        <h3 className={styles.overlayTitle}>{project.name}</h3>
+                        {/* <h3 className={styles.overlayTitle}>{project.name}</h3> */}
                         <div className={styles.overlayLinks}>
                           {/* {project.github && (
                             <a

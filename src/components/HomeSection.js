@@ -116,7 +116,7 @@ export default function HomeSection() {
             transition={{ delay: 0.8, duration: 0.8 }}
           >
             <a
-              href="/resume.pdf"
+              href="../../assets/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.secondaryBtn}

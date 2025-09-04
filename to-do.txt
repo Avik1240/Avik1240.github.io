@@ -1,4 +1,5 @@
-1. Update all the links
-2. Add images as required
-3. Remove unnecessary link or other content
-4. Check overall site thoroughly
+1. Update all the links - done
+2. Add images as required - done
+3. Remove unnecessary link or other content - done
+4. Check overall site thoroughly - done
+5. Add resume - done

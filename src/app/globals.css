@@ -1,5 +1,5 @@
 *, *::before, *::after { box-sizing: border-box; }
-:root { --primary: #379a61; --primary-dark: #2c7a4e; --secondary: #4a5568; --accent: #379a6115; --background: #0a0a0a; --card: #121212; --text-primary: #ffffff; --text-secondary: #cfcfcf; --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); --gradient: linear-gradient(180deg, var(--primary), var(--accent)); }
+:root { --primary: #379a61; --primary-dark: #2c7a4e; --secondary: #4a5568; --accent: #379a6115; --background: #0a0a0a; --card: #0a0a0a; --text-primary: #ffffff; --text-secondary: #cfcfcf; --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); --gradient: linear-gradient(180deg, var(--primary), var(--accent)); }
 html { scroll-behavior: smooth; font-size: 16px; }
 body { margin: 0; padding: 0; color: var(--text-primary); font-family: "Poppins", sans-serif; line-height: 1.6; transition: background-color 0.3s ease; }
 * { box-sizing: border-box; scroll-behavior: smooth; }
