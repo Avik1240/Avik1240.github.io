@@ -106,7 +106,7 @@ export default function HomeSection() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className={styles.description}
           >
-            Building responsive, scalable web applications with React.js and Next.js. Experienced in delivering 40+ projects with modern UI frameworks and AI-assisted development. Passionate about integrating AI tools to enhance development workflows and user experiences.
+            1235655Building responsive, scalable web applications with React.js and Next.js. Experienced in delivering 40+ projects with modern UI frameworks and AI-assisted development. Passionate about integrating AI tools to enhance development workflows and user experiences.
           </motion.p>
 
           <motion.div
