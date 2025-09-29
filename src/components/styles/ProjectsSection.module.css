@@ -50,7 +50,7 @@
 /* Project Info */
 .projectInfo { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
 .projectTitle { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--text-primary); line-height: 1.3; }
-.projectDescription { font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.25rem; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.projectDescription { font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.25rem; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; overflow: hidden; }
 
 /* Tech Stack */
 .techStack { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }

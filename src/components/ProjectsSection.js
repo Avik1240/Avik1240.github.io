@@ -13,13 +13,12 @@ import "swiper/css/pagination";
 
 const projects = [
   {
-    name: "HRMS Enterprise Platform",
+    name: "Ministry of Railways (Railway Board)",
     description:
-      "Comprehensive Human Resource Management System built with Next.js and Tailwind CSS featuring modular component architecture, employee management, and performance analytics.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Next.js", "Tailwind CSS", "React Hooks", "Context API"],
-    // github: "https://github.com/avik-jain/hrms-platform",
-    demo: false,
-    image: "../../assets/images/no-preview.png",
+      "Accessible government portal based on latest DBIM guidelines with responsive design, WCAG compliance, and cross-browser compatibility. Focus on citizen services and mobile-first approach.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery","Java"],
+    demo: "http://165.99.205.26:8080/",
+    image: "../../assets/images/ministry-of-railways-preview.png",
     featured: true,
     underDev: true,
   },
@@ -28,7 +27,6 @@ const projects = [
     description:
       "Accessible government portal frontend ensuring WCAG compliance with responsive design. Built for citizen services with cross-browser compatibility and mobile-first approach.",
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
-    // github: "https://github.com/avik-jain/mygov-portal",
     demo: "https://mygovmaharashtra.mahaonline.gov.in/",
     image: "../../assets/images/mygov-mah-preview.png",
     featured: true,
@@ -73,16 +71,17 @@ const projects = [
     image: "../../assets/images/ndd-preview.png",
     featured: false,
   },
-  // {
-  //   name: "AI-Assisted Development Suite",
-  //   description:
-  //     "Personal development toolkit leveraging ChatGPT and Claude for rapid component generation, intelligent debugging, and code optimization. Pioneering AI-integrated workflows.",
-  //   tech: ["ChatGPT API", "Claude AI", "React.js", "Prompt Engineering"],
-  //   // github: "https://github.com/avik-jain/ai-dev-suite",
-  //   demo: "https://github.com/avik-jain/namo-drone-didi",
-  //   image: "https://via.placeholder.com/500x300",
-  //   featured: true,
-  // },
+    {
+    name: "HRMS Enterprise Platform",
+    description:
+      "Comprehensive Human Resource Management System built with Next.js and Tailwind CSS featuring modular component architecture, employee management, and performance analytics.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Next.js", "Tailwind CSS", "React Hooks", "Context API"],
+    // github: "https://github.com/avik-jain/hrms-platform",
+    demo: false,
+    image: "../../assets/images/no-preview.png",
+    featured: true,
+    underDev: true,
+  },
 ];
 
 export default function ProjectsSection() {
@@ -120,7 +119,7 @@ export default function ProjectsSection() {
               dynamicBullets: true,
             }}
             autoplay={{
-              delay: 4000,
+              delay: 3500,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
