@@ -27,11 +27,11 @@
 	.cardTitle { font-size: 1rem; }
 }
 @media (max-width:575px) {
-	.container { padding: 0 1.5rem; }
+	.container { padding: 0 5px; }
 	.heading { font-size: 1.8rem; margin-bottom: 1.5rem; }
 	.details p { font-size: 0.95rem; margin-bottom: 2rem; }
 	.socials { gap: 1rem; }
-	.card { width: calc(100% - 2rem); min-height: 140px; padding: 1rem; max-width: 100%; }
+	.card { width: 100%; min-height: 140px; padding: 1rem; max-width: 100%; }
 	.icon { font-size: 2rem; width: 2rem; height: 2rem; margin-bottom: 0.8rem; }
 }
 @media (max-width:375px) {

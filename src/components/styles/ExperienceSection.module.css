@@ -5,7 +5,7 @@
 .heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;  text-align: left; position: relative; width: 100%;}
 .headingBar { width: 80px; height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); border-radius: 2px; }
 .experienceCards { display: flex;margin: 0 auto; flex-wrap: wrap;justify-content: space-between;}
-.card { position: relative; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.05); width: calc((100% / 2) - 16px);margin-bottom: 2rem;}
+.card { position: relative; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.05); width: calc((100% / 2) - 16px);margin-bottom: 0;}
 .card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); }
 .cardContent { padding: 0; }
 .cardHeader { display: flex; align-items: center; padding: 1.5rem; background: linear-gradient(90deg, var(--accent-dark), var(--accent)); color: white; }
@@ -51,10 +51,10 @@
 	.achievementItem { font-size: 0.85rem; }
 }
 @media (max-width:575px) {
-	.container { padding: 0 1.5rem; }
+	.container { padding: 0 5px; }
 	.heading { font-size: 1.8rem; }
 	.headingBar { width: 60px; height: 3px; }
-	.headingContainer { margin-bottom: 3rem; }
+	.headingContainer { margin-bottom: 1rem; }
 	.experienceCards { gap: 2rem; }
 	.cardHeader { padding: 1rem; flex-direction: column;align-items: start;}
 	.iconContainer { margin-bottom: 1rem;margin-right: 0;}

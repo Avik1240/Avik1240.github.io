@@ -31,3 +31,9 @@ input:-webkit-autofill { box-shadow: 0 0 0px 1000px var(--card) inset !important
 .swiper-pagination { position: relative !important; margin-top: 2rem !important; }
 .swiper-pagination-bullet { background: rgba(55, 154, 97, 0.3) !important; opacity: 1 !important; transition: all 0.3s ease !important; }
 .swiper-pagination-bullet-active { background: var(--primary) !important; transform: scale(1.2) !important; }
+
+
+@media (max-width:431px) {
+	.swiper-button-prev, .swiper-button-next{display: none !important;}
+    .swiper { padding: 2rem 0 !important;}
+}
