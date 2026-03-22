@@ -1,8 +1,8 @@
 .about { padding: 2rem 0; color: var(--text-primary); }
-.container { width: 100%;margin: 0 auto; padding: 0 2rem; }
+.container { margin: 0 auto; padding: 0 2rem; }
 .content { width: 100%; }
-.headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 1rem; }
-.heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;  position: relative; width: 100%;}
+.headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem; position: relative; }
+.heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); -webkit-background-clip: text;background-clip: text; -webkit-text-fill-color: transparent; text-align: left; position: relative; width: 100%;}
 .headingBar { width: 80px; height: 4px; background: var(--gradient); border-radius: 2px; }
 .aboutContent { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
 .bioSection { display: flex; flex-direction: column; }
@@ -49,7 +49,6 @@
 @media (max-width:375px) {
 	.container { padding: 0 1rem; }
 	.heading { font-size: 1.6rem; }
-	.headingContainer { margin-bottom: 3rem; }
 	.bioHeading, .specializationsHeading { font-size: 1.2rem; }
 	.text { font-size: 0.9rem; line-height: 1.6; }
 	.keyPointNumber { font-size: 1.8rem; }

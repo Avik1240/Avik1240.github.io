@@ -80,7 +80,7 @@ export default function HomeSection() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className={styles.subtitle}
           >
-            Frontend Developer & AI Enthusiast
+            Frontend Developer building scalable government & enterprise platforms
           </motion.div>
 
           <motion.h1
@@ -106,7 +106,7 @@ export default function HomeSection() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className={styles.description}
           >
-            Building responsive, scalable web applications with React.js and Next.js. Experienced in delivering 40+ projects with modern UI frameworks and AI-assisted development. Passionate about integrating AI tools to enhance development workflows and user experiences.
+            Led frontend revamp for Ministry of External Affairs (MEA) • Built UI for Indian Railways & MyGov • Specialized in Next.js, performance optimization & accessibility (GIGW)
           </motion.p>
 
           <motion.div

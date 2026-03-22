@@ -8,27 +8,27 @@ export default function AboutSection() {
   const specializations = [
     {
       icon: <FaCode />,
-      title: "React & Next.js Expert",
+      title: "Government Platform Development",
       description:
-        "Crafting lightning-fast, responsive web applications with component-driven architecture and modern React patterns",
+        "Leading frontend development for MEA, Indian Railways, and MyGov with focus on accessibility (GIGW) and scalability",
     },
     {
       icon: <FaServer />,
-      title: "AI-Powered Development",
+      title: "Performance Optimization",
       description:
-        "Pioneering AI-assisted coding workflows using ChatGPT and Claude for rapid prototyping and intelligent debugging",
+        "Implementing cross-browser compatibility, responsive design, and performance tuning for high-traffic platforms",
     },
     {
       icon: <FaDatabase />,
-      title: "UI/UX Excellence",
+      title: "Component Architecture",
       description:
-        "Delivering pixel-perfect, accessible interfaces with Tailwind CSS, focusing on performance and user experience",
+        "Building reusable, maintainable component systems with React.js and Next.js for enterprise applications",
     },
     {
       icon: <FaLaptopCode />,
-      title: "Enterprise Solutions",
+      title: "Accessibility Compliance",
       description:
-        "Building scalable HRMS platforms and government portals with emphasis on security, WCAG compliance, and maintainability",
+        "Ensuring WCAG and GIGW standards compliance for government portals with accessible, user-friendly interfaces",
     },
   ];
 
@@ -56,7 +56,7 @@ export default function AboutSection() {
             >
               <h3 className={styles.bioHeading}>Professional Background</h3>
               <p className={styles.text}>
-                I'm a passionate Frontend Developer with 1.5+ years of hands-on
+                I'm a passionate Frontend Developer with 3+ years of hands-on
                 experience crafting exceptional web experiences using React.js
                 and Next.js. My journey spans across 40+ diverse projects, where
                 I've mastered the art of building responsive, scalable
@@ -64,13 +64,11 @@ export default function AboutSection() {
                 Bootstrap 5.
               </p>
               <p className={styles.text}>
-                What sets me apart is my innovative approach to development
-                through AI integration. I leverage prompt engineering and
-                generative AI tools like ChatGPT and Claude to accelerate
-                development cycles, enhance code quality, and pioneer
-                cutting-edge solutions. Currently transitioning into GenAI, I'm
-                at the forefront of revolutionizing how we build tomorrow's web
-                applications.
+                Currently working at Silver Touch Technologies (Jan 2024 – Present),
+                I lead frontend development for large-scale government platforms
+                including Ministry of External Affairs (MEA), Indian Railways Railway Board,
+                and MyGov Maharashtra. My expertise includes performance optimization,
+                accessibility compliance (GIGW), and building reusable component-based systems.
               </p>
               <div className={styles.keyPoints}>
                 <div className={styles.keyPoint}>
@@ -80,7 +78,7 @@ export default function AboutSection() {
                   </span>
                 </div>
                 <div className={styles.keyPoint}>
-                  <span className={styles.keyPointNumber}>1.5+</span>
+                  <span className={styles.keyPointNumber}>3+</span>
                   <span className={styles.keyPointLabel}>Years Experience</span>
                 </div>
                 <div className={styles.keyPoint}>

@@ -4,7 +4,9 @@ import SkillsSection from "../components/SkillsSection";
 import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
+import ImpactSection from "../components/ImpactSection";
 import PersonalProjectsSection from "../components/PersonalProjectsSection";
+import CertificationsSection from "../components/CertificationsSection";
 import ContactSection from "../components/ContactSection";
 // import Cursor from "../components/Cursor";
 import Sidebar from "../components/Sidebar";
@@ -22,7 +24,9 @@ export default function Home() {
         <EducationSection />
         <ExperienceSection />
         <ProjectsSection />
-        <PersonalProjectsSection/>
+        <ImpactSection />
+        <PersonalProjectsSection />
+        <CertificationsSection />
         <ContactSection />
       </main>
     </div>

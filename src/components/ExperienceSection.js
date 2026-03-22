@@ -16,12 +16,12 @@ const experiences = [
     location: "Ahmedabad, Gujarat",
     duration: "Jan 2024 - Present",
     description:
-      "Developing enterprise-grade web applications using React.js, Next.js, and modern UI frameworks. Specializing in HRMS platforms, government portals, and AI-assisted development workflows for enhanced productivity and code quality.",
+      "Working on MEA, Indian Railways, HRMS, and other government platforms. Leading frontend development with focus on accessibility (GIGW), performance optimization, and scalable architecture.",
     achievements: [
+      "Led frontend revamp for Ministry of External Affairs (MEA) with CMS integration and GIGW compliance",
+      "Contributed to UI modernization of Indian Railways Railway Board platform",
       "Built comprehensive HRMS product using Next.js and Tailwind CSS with modular architecture",
-      "Developed accessible frontends for MyGov Maharashtra Portal ensuring WCAG compliance",
-      "Delivered modern UIs for BSPHCL, Bower Wealth, and Namo Drone Didi platforms",
-      "Leveraged ChatGPT and AI tools to accelerate component development and debugging processes",
+      "Delivered accessible frontends for MyGov Maharashtra, BSPHCL, Bower Wealth, and Namo Drone Didi",
     ],
   },
   {

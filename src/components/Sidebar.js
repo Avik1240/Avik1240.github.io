@@ -12,6 +12,8 @@ import {
   FaChalkboardTeacher,
   FaBars,
   FaTimes,
+  FaChartLine,
+  FaCertificate,
 } from "react-icons/fa";
 import styles from "./styles/Sidebar.module.css";
 
@@ -36,8 +38,8 @@ export default function Sidebar() {
     const timeoutId = setTimeout(initializeSidebar, 0);
 
     // Cleanup scroll events
-    Events.scrollEvent.register('begin', () => {});
-    Events.scrollEvent.register('end', () => {});
+    Events.scrollEvent.register('begin', () => { });
+    Events.scrollEvent.register('end', () => { });
 
     return () => {
       clearTimeout(timeoutId);
@@ -103,11 +105,22 @@ export default function Sidebar() {
     { to: "education", icon: <FaFile />, label: "Education" },
     { to: "experience", icon: <FaChalkboardTeacher />, label: "Experience" },
     { to: "projects", icon: <FaCode />, label: "Projects" },
+    { to: "impact", icon: <FaChartLine />, label: "Impact" },
+    { to: "certifications", icon: <FaCertificate />, label: "Certifications" },
     { to: "contact", icon: <FaPhone />, label: "Contact" },
   ];
 
   return (
     <>
+      {/* Overlay for mobile */}
+      {isOpen && isInitialized && (
+        <div
+          className={styles.overlay}
+          onClick={() => setIsOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
       <button
         id="sidebar-toggle"
         className={styles.toggleButton}
@@ -120,7 +133,7 @@ export default function Sidebar() {
       <nav
         id="sidebar"
         className={`${styles.sidebar} ${isOpen ? styles.open : styles.closed}`}
-        style={{ 
+        style={{
           // Add a smooth transition and prevent layout shift
           visibility: isInitialized ? 'visible' : 'hidden',
           opacity: isInitialized ? 1 : 0,

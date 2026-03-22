@@ -15,7 +15,9 @@ export default function ContactSection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className={styles.heading}>Contact Me</h2>
+        <div className={styles.headingContainer}>
+          <h2 className={styles.heading}>Contact Me</h2>
+        </div>
         <div className={styles.details}>
           <p>
             Ready to collaborate on your next project? Let's discuss how my

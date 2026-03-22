@@ -1,8 +1,8 @@
-.education { padding: 2rem 0;  color: var(--text-primary); }
-.container {margin: 0 auto; padding: 0 2rem; }
+.education { padding: 2rem 0; color: var(--text-primary); }
+.container { margin: 0 auto; padding: 0 2rem; }
 .content { width: 100%; }
-.headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem; position: relative; }
-.heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;  text-align: left; position: relative; width: 100%;}
+.headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem; position: relative; }
+.heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); -webkit-background-clip: text;background-clip: text; -webkit-text-fill-color: transparent; text-align: left; position: relative; width: 100%;}
 .headingBar { width: 80px; height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-light)); border-radius: 2px; }
 .educationCards { display: flex; flex-wrap: wrap; justify-content: space-between; }
 .card { position: relative; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.05); width: calc((100% / 2) - 16px); margin-bottom: 0; }
@@ -38,7 +38,7 @@
 @media (max-width:767px) {
 	.education { padding: 2rem 0; }
 	.heading { font-size: 2rem; }
-	.card { border-radius: 10px; }
+	.card { border-radius: 10px; margin-bottom: 1rem; }
 	.cardHeader { padding: 1.25rem; }
 	.iconContainer { width: 40px; height: 40px; }
 	.icon { font-size: 1.2rem; }
@@ -56,7 +56,6 @@
 	.container { padding: 0 5px; }
 	.heading { font-size: 1.8rem; }
 	.headingBar { width: 60px; height: 3px; }
-	.headingContainer { margin-bottom: 1rem; }
 	.educationCards { gap: 2rem; }
 	.cardHeader { padding: 1rem; flex-direction: column;align-items: start;}
 	.iconContainer { margin-right: 0;margin-bottom: 1rem;}

@@ -13,11 +13,21 @@ import "swiper/css/pagination";
 
 const projects = [
   {
+    name: "Ministry of External Affairs (MEA) Portal",
+    description:
+      "Led frontend revamp, building scalable and accessible UI with CMS integration. Focused on performance optimization, cross-browser compatibility, and GIGW compliance.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery", ".Net"],
+    demo: "https://165.99.205.19/MEACore",
+    image: "../../assets/images/ministry-of-external-affairs-preview.png",
+    featured: true,
+    underDev: true,
+  },
+  {
     name: "Ministry of Railways (Railway Board)",
     description:
-      "Accessible government portal based on latest DBIM guidelines with responsive design, WCAG compliance, and cross-browser compatibility. Focus on citizen services and mobile-first approach.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery","Java"],
-    demo: "http://165.99.205.26:8080/",
+      "Contributed to UI modernization of a large-scale government platform. Improved responsiveness, usability, and cross-browser compatibility.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery", "Java"],
+    demo: "https://203.176.113.181/RB/",
     image: "../../assets/images/ministry-of-railways-preview.png",
     featured: true,
     underDev: true,
@@ -25,27 +35,27 @@ const projects = [
   {
     name: "MyGov Maharashtra Portal",
     description:
-      "Accessible government portal frontend ensuring WCAG compliance with responsive design. Built for citizen services with cross-browser compatibility and mobile-first approach.",
+      "Built responsive UI components for a high-traffic citizen platform with focus on scalability and accessibility.",
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
     demo: "https://mygovmaharashtra.mahaonline.gov.in/",
     image: "../../assets/images/mygov-mah-preview.png",
     featured: true,
   },
   {
-    name: "BSPHCL Enterprise Dashboard",
+    name: "BSPHCL Portal",
     description:
-      "Modern UI dashboard for Bihar State Power Holding Company with optimized performance, clean architecture, and enhanced user experience through performance tuning.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery", "Performance Optimization"],
+      "Developed and maintained responsive interfaces with focus on usability and cross-browser support.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
     // github: "https://github.com/avik-jain/bsphcl-dashboard",
     demo: "http://hrmspension.bsphcl.co.in:9010/",
     image: "../../assets/images/bsphcl-preview.png",
     featured: true,
   },
   {
-    name: "Bower Private Clients",
+    name: "Bower Wealth / Private Clients",
     description:
-      "Financial services platform with responsive design and modern UI components. Focus on user experience optimization and scalable component architecture.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery","Wordpress"],
+      "Delivered premium, responsive UI for financial platforms with performance optimization.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery", "Wordpress"],
     // github: "https://github.com/avik-jain/bower-wealth",
     demo: "https://www.bowerhomefinance.co.uk/private-clients/",
     image: "../../assets/images/bower-private-preview.png",
@@ -54,8 +64,8 @@ const projects = [
   {
     name: "Bower Wealth Platform",
     description:
-      "Financial services platform with responsive design and modern UI components. Focus on user experience optimization and scalable component architecture.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery","Wordpress"],
+      "Delivered premium, responsive UI for financial platforms with performance optimization.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery", "Wordpress"],
     // github: "https://github.com/avik-jain/bower-wealth",
     demo: "https://www.bowerwealth.co.uk/",
     image: "../../assets/images/bower-wealth-preview.png",
@@ -64,18 +74,18 @@ const projects = [
   {
     name: "Namo Drone Didi Platform",
     description:
-      "Government initiative platform for drone technology empowerment with modern UI design, improved load times, and user-centric interface development.",
+      "Built accessible and mobile-friendly government portal ensuring smooth user experience.",
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"],
     // github: "https://github.com/avik-jain/namo-drone-didi",
     demo: "https://namodronedidi.da.gov.in/",
     image: "../../assets/images/ndd-preview.png",
     featured: false,
   },
-    {
-    name: "HRMS Enterprise Platform",
+  {
+    name: "HRMS (Next.js)",
     description:
-      "Comprehensive Human Resource Management System built with Next.js and Tailwind CSS featuring modular component architecture, employee management, and performance analytics.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Next.js", "Tailwind CSS", "React Hooks", "Context API"],
+      "Developed reusable components and improved frontend architecture using Next.js and Tailwind CSS. Enhanced performance and user workflows.",
+    tech: ["Next.js", "Tailwind CSS", "React", "JavaScript"],
     // github: "https://github.com/avik-jain/hrms-platform",
     demo: false,
     image: "../../assets/images/no-preview.png",

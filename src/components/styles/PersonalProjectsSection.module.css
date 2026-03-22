@@ -3,8 +3,8 @@
 .container { margin: 0 auto; padding: 0 2rem; }
 
 /* Heading Styles */
-.headingContainer { text-align: center; margin-bottom: 1.5rem; }
-.heading { text-align: left; font-size: 3rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.headingContainer { display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem; position: relative; }
+.heading { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); background: var(--gradient); -webkit-background-clip: text;background-clip: text; -webkit-text-fill-color: transparent; text-align: left; position: relative; width: 100%; }
 .subheading { font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.6; }
 
 /* Category Filter */
@@ -50,7 +50,7 @@
 .viewMoreBtn:hover { color: var(--text-primary); transform: translateX(5px); }
 
 /* Modal */
-.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 2rem; backdrop-filter: blur(5px); }
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 2rem; -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); }
 .modalContent { background: var(--card); border-radius: 20px; padding: 2rem; max-width: 600px; width: 100%; max-height: 80vh; overflow-y: auto; position: relative; border: 2px solid rgba(55, 154, 97, 0.1); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); }
 .closeBtn { position: absolute; top: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.1); border: none; color: var(--text-primary); font-size: 1.5rem; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; transition: all 0.3s ease; padding: 0;display: flex;align-items: center;justify-content: center;}
 .closeBtn:hover { background: rgba(255, 0, 0, 0.1); color: #ff4757; }
@@ -70,7 +70,7 @@
 	.container { padding: 0 1rem; }
 	.heading { font-size: 2.2rem; }
 	.subheading { font-size: 1rem; }
-	.projectsGrid { grid-template-columns: 1fr; max-width: 500px; }
+	.projectsGrid { grid-template-columns: 1fr; max-width: 100%; }
 	.categoryFilter { gap: 0.5rem; }
 	.categoryBtn { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
 	.projectCard { padding: 1.25rem; }
